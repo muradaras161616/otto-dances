@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "dances": [
+    {"id": "gangnam", "name": "Gangnam Style", "icon": "🕺"},
+    {"id": "moonwalk", "name": "Moonwalk", "icon": "🌙"},
+    {"id": "floss", "name": "Floss", "icon": "🎮"},
+    {"id": "macarena", "name": "Macarena", "icon": "💃"},
+    {"id": "thriller", "name": "Thriller", "icon": "🧟"},
+    {"id": "russian", "name": "Russian Kick", "icon": "🦵"},
+    {"id": "chicken", "name": "Chicken Dance", "icon": "🐔"},
+    {"id": "dab", "name": "Dab", "icon": "🙆"},
+    {"id": "robot", "name": "Robot", "icon": "🤖"},
+    {"id": "shake", "name": "Shake", "icon": "🫨"},
+    {"id": "twerk", "name": "Twerk", "icon": "🍑"},
+    {"id": "wave", "name": "Wave", "icon": "👋"},
+    {"id": "disco", "name": "Disco", "icon": "🪩"},
+    {"id": "salsa", "name": "Salsa", "icon": "🌶️"},
+    {"id": "hype", "name": "Hype", "icon": "🔥"}
+  ]
+}

@@ -81,13 +81,13 @@ int eyeRadius = 10;
 //                         SES FONKSIYONLARI
 // ═══════════════════════════════════════════════════════════
 
-void beep(int freq, int dur) {
-  if (freq > 0) {
-    tone(PIN_BUZZER, freq, dur);
-    delay(dur);
+void beep(int frequency, int duration) {
+  if (frequency > 0) {
+    tone(PIN_BUZZER, frequency, duration);
+    delay(duration);
     noTone(PIN_BUZZER);
   } else {
-    delay(dur);
+    delay(duration);
   }
 }
 
@@ -149,33 +149,33 @@ void sndClap() {
 }
 
 void playMario() {
-  int mel[] = {NOTE_E5,NOTE_E5,0,NOTE_E5,0,NOTE_C5,NOTE_E5,NOTE_G5};
-  int dur[] = {150,150,150,150,150,150,150,400};
-  for(int i=0; i<8; i++) { beep(mel[i],dur[i]); delay(30); yield(); }
+  int melody[] = {NOTE_E5,NOTE_E5,0,NOTE_E5,0,NOTE_C5,NOTE_E5,NOTE_G5};
+  int noteDurations[] = {150,150,150,150,150,150,150,400};
+  for(int noteIndex=0; noteIndex<8; noteIndex++) { beep(melody[noteIndex],noteDurations[noteIndex]); delay(30); yield(); }
 }
 
 void playStarWars() {
-  int mel[] = {NOTE_A4,NOTE_A4,NOTE_A4,NOTE_F4,NOTE_C5,NOTE_A4,NOTE_F4,NOTE_C5,NOTE_A4};
-  int dur[] = {500,500,500,350,150,500,350,150,1000};
-  for(int i=0; i<9; i++) { beep(mel[i],dur[i]); delay(50); yield(); }
+  int melody[] = {NOTE_A4,NOTE_A4,NOTE_A4,NOTE_F4,NOTE_C5,NOTE_A4,NOTE_F4,NOTE_C5,NOTE_A4};
+  int noteDurations[] = {500,500,500,350,150,500,350,150,1000};
+  for(int noteIndex=0; noteIndex<9; noteIndex++) { beep(melody[noteIndex],noteDurations[noteIndex]); delay(50); yield(); }
 }
 
 void playTetris() {
-  int mel[] = {NOTE_E5,NOTE_B4,NOTE_C5,NOTE_D5,NOTE_C5,NOTE_B4,NOTE_A4};
-  int dur[] = {400,200,200,400,200,200,400};
-  for(int i=0; i<7; i++) { beep(mel[i],dur[i]); delay(50); yield(); }
+  int melody[] = {NOTE_E5,NOTE_B4,NOTE_C5,NOTE_D5,NOTE_C5,NOTE_B4,NOTE_A4};
+  int noteDurations[] = {400,200,200,400,200,200,400};
+  for(int noteIndex=0; noteIndex<7; noteIndex++) { beep(melody[noteIndex],noteDurations[noteIndex]); delay(50); yield(); }
 }
 
 void playPirates() {
-  int mel[] = {NOTE_E4,NOTE_G4,NOTE_A4,NOTE_A4,0,NOTE_A4,NOTE_B4,NOTE_C5};
-  int dur[] = {150,150,300,150,150,150,150,300};
-  for(int i=0; i<8; i++) { beep(mel[i],dur[i]); delay(30); yield(); }
+  int melody[] = {NOTE_E4,NOTE_G4,NOTE_A4,NOTE_A4,0,NOTE_A4,NOTE_B4,NOTE_C5};
+  int noteDurations[] = {150,150,300,150,150,150,150,300};
+  for(int noteIndex=0; noteIndex<8; noteIndex++) { beep(melody[noteIndex],noteDurations[noteIndex]); delay(30); yield(); }
 }
 
 void playHappy() {
-  int mel[] = {NOTE_G4,NOTE_G4,NOTE_A4,NOTE_G4,NOTE_C5,NOTE_B4};
-  int dur[] = {200,200,400,400,400,800};
-  for(int i=0; i<6; i++) { beep(mel[i],dur[i]); delay(50); yield(); }
+  int melody[] = {NOTE_G4,NOTE_G4,NOTE_A4,NOTE_G4,NOTE_C5,NOTE_B4};
+  int noteDurations[] = {200,200,400,400,400,800};
+  for(int noteIndex=0; noteIndex<6; noteIndex++) { beep(melody[noteIndex],noteDurations[noteIndex]); delay(50); yield(); }
 }
 
 void playVictory() {
@@ -187,17 +187,17 @@ void playVictory() {
 //                       GOZ FONKSIYONLARI
 // ═══════════════════════════════════════════════════════════
 
-int safeRadius(int r, int w, int h) {
-  if (w < 2*(r+1)) r = w/2 - 1;
-  if (h < 2*(r+1)) r = h/2 - 1;
-  return (r < 0) ? 0 : r;
+int safeRadius(int radius, int width, int height) {
+  if (width < 2*(radius+1)) radius = width/2 - 1;
+  if (height < 2*(radius+1)) radius = height/2 - 1;
+  return (radius < 0) ? 0 : radius;
 }
 
 void drawEyes() {
-  int rL = safeRadius(eyeRadius, eyeL.w, eyeL.h);
-  int rR = safeRadius(eyeRadius, eyeR.w, eyeR.h);
-  oled.fillRoundRect(eyeL.x - eyeL.w/2, eyeL.y - eyeL.h/2, eyeL.w, eyeL.h, rL, WHITE);
-  oled.fillRoundRect(eyeR.x - eyeR.w/2, eyeR.y - eyeR.h/2, eyeR.w, eyeR.h, rR, WHITE);
+  int leftRadius = safeRadius(eyeRadius, eyeL.w, eyeL.h);
+  int rightRadius = safeRadius(eyeRadius, eyeR.w, eyeR.h);
+  oled.fillRoundRect(eyeL.x - eyeL.w/2, eyeL.y - eyeL.h/2, eyeL.w, eyeL.h, leftRadius, WHITE);
+  oled.fillRoundRect(eyeR.x - eyeR.w/2, eyeR.y - eyeR.h/2, eyeR.w, eyeR.h, rightRadius, WHITE);
 }
 
 void updateDisplay() {
@@ -380,14 +380,14 @@ void showGameOver() {
   oled.display();
 }
 
-void showText(const char* l1, const char* l2, const char* l3) {
+void showText(const char* line1, const char* line2, const char* line3) {
   oled.clearDisplay();
   oled.setTextSize(1);
   oled.setTextColor(WHITE);
   oled.setCursor(0, 0);
-  oled.println(l1);
-  if (strlen(l2) > 0) oled.println(l2);
-  if (strlen(l3) > 0) oled. println(l3);
+  oled.println(line1);
+  if (strlen(line2) > 0) oled.println(line2);
+  if (strlen(line3) > 0) oled. println(line3);
   oled.display();
 }
 
@@ -408,38 +408,38 @@ void home() {
   isMoving = false;
 }
 
-void oscillate(int steps, int T, int A[], int O[], double P[]) {
-  for (int i = 0; i < 4; i++) {
-    servo[i].SetO(O[i]);
-    servo[i].SetA(A[i]);
-    servo[i].SetPh(P[i]);
-    servo[i].SetT(T);
+void oscillate(int steps, int period, int amplitudes[], int offsets[], double phases[]) {
+  for (int servoIndex = 0; servoIndex < 4; servoIndex++) {
+    servo[servoIndex].SetO(offsets[servoIndex]);
+    servo[servoIndex].SetA(amplitudes[servoIndex]);
+    servo[servoIndex].SetPh(phases[servoIndex]);
+    servo[servoIndex].SetT(period);
   }
-  unsigned long ref = millis();
-  for (int s = 0; s < steps; s++) {
-    while (millis() - ref < (unsigned long)T) {
-      for (int i = 0; i < 4; i++) servo[i].refresh();
+  unsigned long referenceTime = millis();
+  for (int stepIndex = 0; stepIndex < steps; stepIndex++) {
+    while (millis() - referenceTime < (unsigned long)period) {
+      for (int servoIndex = 0; servoIndex < 4; servoIndex++) servo[servoIndex].refresh();
       yield();
     }
-    ref = millis();
+    referenceTime = millis();
   }
 }
 
-void walk(int steps, int dir) {
+void walk(int steps, int direction) {
   isMoving = true;
-  int A[] = {15, 15, 30, 30};
-  int O[] = {0, 0, 0, 0};
-  double P[] = {0, 0, DEG2RAD(dir*-90), DEG2RAD(dir*-90)};
-  oscillate(steps, moveSpeed, A, O, P);
+  int amplitudes[] = {15, 15, 30, 30};
+  int offsets[] = {0, 0, 0, 0};
+  double phases[] = {0, 0, DEG2RAD(direction*-90), DEG2RAD(direction*-90)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
   isMoving = false;
 }
 
-void turn(int steps, int dir) {
+void turn(int steps, int direction) {
   isMoving = true;
-  int A[] = {20, 20, 15, 15};
-  int O[] = {0, 0, 0, 0};
-  double P[] = {0, 0, DEG2RAD(dir*-90), DEG2RAD(dir*-90)};
-  oscillate(steps, moveSpeed, A, O, P);
+  int amplitudes[] = {20, 20, 15, 15};
+  int offsets[] = {0, 0, 0, 0};
+  double phases[] = {0, 0, DEG2RAD(direction*-90), DEG2RAD(direction*-90)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
   isMoving = false;
 }
 
@@ -455,20 +455,20 @@ void jump(int times) {
   }
 }
 
-void bend(int dir) {
-  servo[2].SetPosition(90 + dir*40);
-  servo[3].SetPosition(90 - dir*40);
+void bend(int direction) {
+  servo[2].SetPosition(90 + direction*40);
+  servo[3].SetPosition(90 - direction*40);
   delay(400);
   home();
 }
 
-void shakeLeg(int leg) {
-  int f = (leg == 0) ? 2 : 3;
-  servo[(leg == 0) ? 3 : 2].SetPosition(leg == 0 ? 60 : 120);
+void shakeLeg(int legIndex) {
+  int footServo = (legIndex == 0) ? 2 : 3;
+  servo[(legIndex == 0) ? 3 : 2].SetPosition(legIndex == 0 ? 60 : 120);
   delay(150);
-  for (int i = 0; i < 5; i++) {
-    servo[f].SetPosition(60); delay(80);
-    servo[f].SetPosition(120); delay(80);
+  for (int shakeCount = 0; shakeCount < 5; shakeCount++) {
+    servo[footServo].SetPosition(60); delay(80);
+    servo[footServo].SetPosition(120); delay(80);
     yield();
   }
   home();
@@ -596,45 +596,45 @@ void gameOverMove() {
 // ═══════════════════════════════════════════════════════════
 
 void moonwalk(int steps) {
-  int A[] = {25, 25, 25, 25};
-  int O[] = {-15, 15, 0, 0};
-  double P[] = {0, DEG2RAD(300), DEG2RAD(-90), DEG2RAD(90)};
-  oscillate(steps, moveSpeed, A, O, P);
+  int amplitudes[] = {25, 25, 25, 25};
+  int offsets[] = {-15, 15, 0, 0};
+  double phases[] = {0, DEG2RAD(300), DEG2RAD(-90), DEG2RAD(90)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
 }
 
 void swing(int steps) {
-  int A[] = {25, 25, 20, 20};
-  int O[] = {-15, 15, 0, 0};
-  double P[] = {0, 0, DEG2RAD(-90), DEG2RAD(90)};
-  oscillate(steps, moveSpeed, A, O, P);
+  int amplitudes[] = {25, 25, 20, 20};
+  int offsets[] = {-15, 15, 0, 0};
+  double phases[] = {0, 0, DEG2RAD(-90), DEG2RAD(90)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
 }
 
-void crusaito(int steps, int dir) {
-  int A[] = {25, 25, 20, 20};
-  int O[] = {-15*dir, 15*dir, 0, 0};
-  double P[] = {0, DEG2RAD(180), DEG2RAD(-90*dir), DEG2RAD(90*dir)};
-  oscillate(steps, moveSpeed, A, O, P);
+void crusaito(int steps, int direction) {
+  int amplitudes[] = {25, 25, 20, 20};
+  int offsets[] = {-15*direction, 15*direction, 0, 0};
+  double phases[] = {0, DEG2RAD(180), DEG2RAD(-90*direction), DEG2RAD(90*direction)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
 }
 
 void flapping(int steps) {
-  int A[] = {15, 15, 20, 20};
-  int O[] = {0, 0, -20, 20};
-  double P[] = {0, DEG2RAD(180), DEG2RAD(-90), DEG2RAD(90)};
-  oscillate(steps, moveSpeed, A, O, P);
+  int amplitudes[] = {15, 15, 20, 20};
+  int offsets[] = {0, 0, -20, 20};
+  double phases[] = {0, DEG2RAD(180), DEG2RAD(-90), DEG2RAD(90)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
 }
 
 void jitter(int steps) {
-  int A[] = {20, 20, 0, 0};
-  int O[] = {0, 0, 0, 0};
-  double P[] = {0, DEG2RAD(180), 0, 0};
-  oscillate(steps, moveSpeed/2, A, O, P);
+  int amplitudes[] = {20, 20, 0, 0};
+  int offsets[] = {0, 0, 0, 0};
+  double phases[] = {0, DEG2RAD(180), 0, 0};
+  oscillate(steps, moveSpeed/2, amplitudes, offsets, phases);
 }
 
 void tiptoe(int steps) {
-  int A[] = {20, 20, 20, 20};
-  int O[] = {0, 0, 20, -20};
-  double P[] = {0, DEG2RAD(180), 0, DEG2RAD(180)};
-  oscillate(steps, moveSpeed, A, O, P);
+  int amplitudes[] = {20, 20, 20, 20};
+  int offsets[] = {0, 0, 20, -20};
+  double phases[] = {0, DEG2RAD(180), 0, DEG2RAD(180)};
+  oscillate(steps, moveSpeed, amplitudes, offsets, phases);
 }
 
 void upDown(int steps) {
@@ -646,10 +646,10 @@ void upDown(int steps) {
 }
 
 void shake(int steps) {
-  int A[] = {0, 0, 15, 15};
-  int O[] = {0, 0, 0, 0};
-  double P[] = {0, 0, 0, DEG2RAD(180)};
-  oscillate(steps, moveSpeed/3, A, O, P);
+  int amplitudes[] = {0, 0, 15, 15};
+  int offsets[] = {0, 0, 0, 0};
+  double phases[] = {0, 0, 0, DEG2RAD(180)};
+  oscillate(steps, moveSpeed/3, amplitudes, offsets, phases);
 }
 
 void gangnam(int steps) {
@@ -666,11 +666,11 @@ void gangnam(int steps) {
   }
 }
 
-void dab(int dir) {
-  servo[0]. SetPosition(90 + dir*35);
-  servo[1].SetPosition(90 + dir*35);
-  servo[2].SetPosition(90 + dir*45);
-  servo[3].SetPosition(90 - dir*45);
+void dab(int direction) {
+  servo[0]. SetPosition(90 + direction*35);
+  servo[1].SetPosition(90 + direction*35);
+  servo[2].SetPosition(90 + direction*45);
+  servo[3].SetPosition(90 - direction*45);
   delay(500);
   home();
 }
@@ -717,8 +717,8 @@ void robot(int steps) {
 }
 
 void randomDance() {
-  int d = random(0, 15);
-  switch (d) {
+  int danceIndex = random(0, 15);
+  switch (danceIndex) {
     case 0: moonwalk(3); break;
     case 1: swing(3); break;
     case 2: crusaito(3, 1); break;
@@ -742,8 +742,8 @@ void partyMode() {
   eyeHappy();
   randomDance();
   
-  int r = random(0, 6);
-  switch(r) {
+  int soundIndex = random(0, 6);
+  switch(soundIndex) {
     case 0: playMario(); break;
     case 1: sndR2D2(); break;
     case 2: sndHappy(); break;
@@ -1076,8 +1076,8 @@ void danceHipHop() {
 }
 
 void randomMusicDance() {
-  int d = random(0, 12);
-  switch (d) {
+  int danceIndex = random(0, 12);
+  switch (danceIndex) {
     case 0: danceMario(); break;
     case 1: danceDisco(); break;
     case 2: danceSalsa(); break;
@@ -1103,10 +1103,10 @@ long getDistance() {
   digitalWrite(PIN_TRIGGER, HIGH);
   delayMicroseconds(10);
   digitalWrite(PIN_TRIGGER, LOW);
-  long dur = pulseIn(PIN_ECHO, HIGH, 25000);
-  long dist = dur * 0.034 / 2;
-  if (dist == 0 || dist > 300) dist = 300;
-  return dist;
+  long pulseDuration = pulseIn(PIN_ECHO, HIGH, 25000);
+  long distanceCm = pulseDuration * 0.034 / 2;
+  if (distanceCm == 0 || distanceCm > 300) distanceCm = 300;
+  return distanceCm;
 }
 
 bool isObstacle() {
@@ -1687,122 +1687,122 @@ void handleRoot() {
 }
 
 void handleCmd() {
-  String q = server.arg("q");
-  String r = "OK";
+  String command = server.arg("q");
+  String response = "OK";
   
   // Modlar
-  if (q == "idle") { currentMode = MODE_IDLE; home(); resetEyes(); r = "Mod: Bekleme"; }
-  else if (q == "auto") { currentMode = MODE_AUTO; r = "Mod: Otonom"; }
-  else if (q == "dance") { currentMode = MODE_DANCE; r = "Mod: Dans"; }
-  else if (q == "party") { currentMode = MODE_PARTY; r = "Mod: Parti"; }
-  else if (q == "mdance") { currentMode = MODE_MUSIC_DANCE; r = "Mod: Muzikli Dans"; }
-  else if (q == "sleep") { currentMode = MODE_SLEEP; eyeSleepy(); home(); r = "Mod: Uyku"; }
-  else if (q == "demo") { demoMode(); r = "Demo bitti! "; }
+  if (command == "idle") { currentMode = MODE_IDLE; home(); resetEyes(); response = "Mod: Bekleme"; }
+  else if (command == "auto") { currentMode = MODE_AUTO; response = "Mod: Otonom"; }
+  else if (command == "dance") { currentMode = MODE_DANCE; response = "Mod: Dans"; }
+  else if (command == "party") { currentMode = MODE_PARTY; response = "Mod: Parti"; }
+  else if (command == "mdance") { currentMode = MODE_MUSIC_DANCE; response = "Mod: Muzikli Dans"; }
+  else if (command == "sleep") { currentMode = MODE_SLEEP; eyeSleepy(); home(); response = "Mod: Uyku"; }
+  else if (command == "demo") { demoMode(); response = "Demo bitti! "; }
   
   // Hareketler
-  else if (q == "fwd") { eyeHappy(); walk(2,1); home(); resetEyes(); r = "Ileri"; }
-  else if (q == "back") { eyeBlink(); walk(2,-1); home(); resetEyes(); r = "Geri"; }
-  else if (q == "left") { eyeBlink(); turn(2,1); home(); resetEyes(); r = "Sol"; }
-  else if (q == "right") { eyeBlink(); turn(2,-1); home(); resetEyes(); r = "Sag"; }
-  else if (q == "stop") { home(); resetEyes(); r = "Durdu"; }
-  else if (q == "jump") { eyeSurprised(); jump(2); home(); resetEyes(); r = "Zipladi"; }
-  else if (q == "bend") { bend(1); r = "Egildi"; }
-  else if (q == "sleft") { shakeLeg(0); r = "Sol salladi"; }
-  else if (q == "sright") { shakeLeg(1); r = "Sag salladi"; }
-  else if (q == "kleft") { kickLeft(); r = "Sol tekme"; }
-  else if (q == "kright") { kickRight(); r = "Sag tekme"; }
-  else if (q == "clap") { clap(3); r = "Alkisladi"; }
+  else if (command == "fwd") { eyeHappy(); walk(2,1); home(); resetEyes(); response = "Ileri"; }
+  else if (command == "back") { eyeBlink(); walk(2,-1); home(); resetEyes(); response = "Geri"; }
+  else if (command == "left") { eyeBlink(); turn(2,1); home(); resetEyes(); response = "Sol"; }
+  else if (command == "right") { eyeBlink(); turn(2,-1); home(); resetEyes(); response = "Sag"; }
+  else if (command == "stop") { home(); resetEyes(); response = "Durdu"; }
+  else if (command == "jump") { eyeSurprised(); jump(2); home(); resetEyes(); response = "Zipladi"; }
+  else if (command == "bend") { bend(1); response = "Egildi"; }
+  else if (command == "sleft") { shakeLeg(0); response = "Sol salladi"; }
+  else if (command == "sright") { shakeLeg(1); response = "Sag salladi"; }
+  else if (command == "kleft") { kickLeft(); response = "Sol tekme"; }
+  else if (command == "kright") { kickRight(); response = "Sag tekme"; }
+  else if (command == "clap") { clap(3); response = "Alkisladi"; }
   
   // Danslar
-  else if (q == "moon") { eyeHappy(); moonwalk(3); home(); resetEyes(); r = "Moonwalk"; }
-  else if (q == "swing") { eyeHappy(); swing(3); home(); resetEyes(); r = "Swing"; }
-  else if (q == "crus") { eyeHappy(); crusaito(3,1); home(); resetEyes(); r = "Crusaito"; }
-  else if (q == "flap") { eyeHappy(); flapping(3); home(); resetEyes(); r = "Flapping"; }
-  else if (q == "jit") { jitter(5); home(); r = "Jitter"; }
-  else if (q == "tip") { eyeHappy(); tiptoe(3); home(); resetEyes(); r = "Tiptoe"; }
-  else if (q == "updn") { upDown(4); home(); r = "Up-Down"; }
-  else if (q == "shake") { shake(6); home(); r = "Shake"; }
-  else if (q == "gang") { eyeHappy(); gangnam(3); home(); resetEyes(); r = "Gangnam! "; }
-  else if (q == "dab") { dab(1); r = "Dab! "; }
-  else if (q == "twist") { twist(3); r = "Twist"; }
-  else if (q == "wave") { wave(4); r = "Wave"; }
-  else if (q == "twerk") { twerk(5); r = "Twerk! "; }
-  else if (q == "robot") { robot(2); r = "Robot"; }
-  else if (q == "rdance") { randomDance(); r = "Rastgele dans! "; }
+  else if (command == "moon") { eyeHappy(); moonwalk(3); home(); resetEyes(); response = "Moonwalk"; }
+  else if (command == "swing") { eyeHappy(); swing(3); home(); resetEyes(); response = "Swing"; }
+  else if (command == "crus") { eyeHappy(); crusaito(3,1); home(); resetEyes(); response = "Crusaito"; }
+  else if (command == "flap") { eyeHappy(); flapping(3); home(); resetEyes(); response = "Flapping"; }
+  else if (command == "jit") { jitter(5); home(); response = "Jitter"; }
+  else if (command == "tip") { eyeHappy(); tiptoe(3); home(); resetEyes(); response = "Tiptoe"; }
+  else if (command == "updn") { upDown(4); home(); response = "Up-Down"; }
+  else if (command == "shake") { shake(6); home(); response = "Shake"; }
+  else if (command == "gang") { eyeHappy(); gangnam(3); home(); resetEyes(); response = "Gangnam! "; }
+  else if (command == "dab") { dab(1); response = "Dab! "; }
+  else if (command == "twist") { twist(3); response = "Twist"; }
+  else if (command == "wave") { wave(4); response = "Wave"; }
+  else if (command == "twerk") { twerk(5); response = "Twerk! "; }
+  else if (command == "robot") { robot(2); response = "Robot"; }
+  else if (command == "rdance") { randomDance(); response = "Rastgele dans! "; }
   
   // Cocuk Sarkilari
-  else if (q == "danne") { danceAnneniSeviyorsan(); r = "Anneni Seviyorsan!"; }
-  else if (q == "dhappy") { danceIfYoureHappy(); r = "If You're Happy! "; }
-  else if (q == "dshark") { danceBabyShark(); r = "Baby Shark!"; }
-  else if (q == "dhead") { danceHeadShoulders(); r = "Head Shoulders! "; }
+  else if (command == "danne") { danceAnneniSeviyorsan(); response = "Anneni Seviyorsan!"; }
+  else if (command == "dhappy") { danceIfYoureHappy(); response = "If You're Happy! "; }
+  else if (command == "dshark") { danceBabyShark(); response = "Baby Shark!"; }
+  else if (command == "dhead") { danceHeadShoulders(); response = "Head Shoulders! "; }
   
   // Muzikli Danslar
-  else if (q == "dmario") { danceMario(); r = "Mario Dance!"; }
-  else if (q == "ddisco") { danceDisco(); r = "Disco!"; }
-  else if (q == "dsalsa") { danceSalsa(); r = "Salsa! "; }
-  else if (q == "drock") { danceRock(); r = "Rock!"; }
-  else if (q == "dhiphop") { danceHipHop(); r = "Hip-Hop!"; }
-  else if (q == "dstarw") { danceStarWars(); r = "Star Wars!"; }
-  else if (q == "dtetris") { danceTetris(); r = "Tetris!"; }
-  else if (q == "rmdance") { randomMusicDance(); r = "Rastgele muzikli! "; }
+  else if (command == "dmario") { danceMario(); response = "Mario Dance!"; }
+  else if (command == "ddisco") { danceDisco(); response = "Disco!"; }
+  else if (command == "dsalsa") { danceSalsa(); response = "Salsa! "; }
+  else if (command == "drock") { danceRock(); response = "Rock!"; }
+  else if (command == "dhiphop") { danceHipHop(); response = "Hip-Hop!"; }
+  else if (command == "dstarw") { danceStarWars(); response = "Star Wars!"; }
+  else if (command == "dtetris") { danceTetris(); response = "Tetris!"; }
+  else if (command == "rmdance") { randomMusicDance(); response = "Rastgele muzikli! "; }
   
   // Gozler
-  else if (q == "enorm") { resetEyes(); r = "Normal"; }
-  else if (q == "ehappy") { eyeHappy(); resetEyes(); r = "Mutlu"; }
-  else if (q == "esad") { eyeSad(); resetEyes(); r = "Uzgun"; }
-  else if (q == "eangry") { eyeAngry(); resetEyes(); r = "Kizgin"; }
-  else if (q == "esurp") { eyeSurprised(); r = "Saskin"; }
-  else if (q == "elove") { eyeLove(); resetEyes(); r = "Asik"; }
-  else if (q == "esleep") { eyeSleepy(); r = "Uykulu"; }
-  else if (q == "ecool") { eyeCool(); resetEyes(); r = "Cool"; }
-  else if (q == "eskull") { eyeSkull(); resetEyes(); r = "Iskelet"; }
-  else if (q == "edizzy") { eyeDizzy(); resetEyes(); r = "Sersem"; }
-  else if (q == "ewink") { eyeWink(); r = "Goz kirpti"; }
-  else if (q == "ethink") { eyeThinking(); r = "Dusunuyor"; }
-  else if (q == "edead") { eyeDead(); r = "Olu gozler"; }
-  else if (q == "blink") { eyeBlink(); r = "Kirpti"; }
-  else if (q == "eleft") { eyeLookLeft(); r = "Sola bakti"; }
-  else if (q == "eright") { eyeLookRight(); r = "Saga bakti"; }
+  else if (command == "enorm") { resetEyes(); response = "Normal"; }
+  else if (command == "ehappy") { eyeHappy(); resetEyes(); response = "Mutlu"; }
+  else if (command == "esad") { eyeSad(); resetEyes(); response = "Uzgun"; }
+  else if (command == "eangry") { eyeAngry(); resetEyes(); response = "Kizgin"; }
+  else if (command == "esurp") { eyeSurprised(); response = "Saskin"; }
+  else if (command == "elove") { eyeLove(); resetEyes(); response = "Asik"; }
+  else if (command == "esleep") { eyeSleepy(); response = "Uykulu"; }
+  else if (command == "ecool") { eyeCool(); resetEyes(); response = "Cool"; }
+  else if (command == "eskull") { eyeSkull(); resetEyes(); response = "Iskelet"; }
+  else if (command == "edizzy") { eyeDizzy(); resetEyes(); response = "Sersem"; }
+  else if (command == "ewink") { eyeWink(); response = "Goz kirpti"; }
+  else if (command == "ethink") { eyeThinking(); response = "Dusunuyor"; }
+  else if (command == "edead") { eyeDead(); response = "Olu gozler"; }
+  else if (command == "blink") { eyeBlink(); response = "Kirpti"; }
+  else if (command == "eleft") { eyeLookLeft(); response = "Sola bakti"; }
+  else if (command == "eright") { eyeLookRight(); response = "Saga bakti"; }
   
   // Sesler
-  else if (q == "shappy") { sndHappy(); r = "Mutlu ses"; }
-  else if (q == "ssad") { sndSad(); r = "Uzgun ses"; }
-  else if (q == "sangry") { sndAngry(); r = "Kizgin ses"; }
-  else if (q == "ssurp") { sndSurprise(); r = "Saskin ses"; }
-  else if (q == "sfart") { sndFart(); r = "Prrrt!"; }
-  else if (q == "scuddly") { sndCuddly(); r = "Tatli ses"; }
-  else if (q == "spolice") { sndPolice(); r = "Polis! "; }
-  else if (q == "sr2d2") { sndR2D2(); r = "R2D2!"; }
-  else if (q == "slaser") { sndLaser(); r = "Pew pew!"; }
-  else if (q == "sgameover") { sndGameOver(); r = "Game Over!"; }
-  else if (q == "sdeath") { sndDeath(); r = "Olum sesi"; }
-  else if (q == "sclap") { sndClap(); r = "Alkis sesi"; }
+  else if (command == "shappy") { sndHappy(); response = "Mutlu ses"; }
+  else if (command == "ssad") { sndSad(); response = "Uzgun ses"; }
+  else if (command == "sangry") { sndAngry(); response = "Kizgin ses"; }
+  else if (command == "ssurp") { sndSurprise(); response = "Saskin ses"; }
+  else if (command == "sfart") { sndFart(); response = "Prrrt!"; }
+  else if (command == "scuddly") { sndCuddly(); response = "Tatli ses"; }
+  else if (command == "spolice") { sndPolice(); response = "Polis! "; }
+  else if (command == "sr2d2") { sndR2D2(); response = "R2D2!"; }
+  else if (command == "slaser") { sndLaser(); response = "Pew pew!"; }
+  else if (command == "sgameover") { sndGameOver(); response = "Game Over!"; }
+  else if (command == "sdeath") { sndDeath(); response = "Olum sesi"; }
+  else if (command == "sclap") { sndClap(); response = "Alkis sesi"; }
   
   // Melodiler
-  else if (q == "mmario") { playMario(); r = "Mario! "; }
-  else if (q == "mstar") { playStarWars(); r = "Star Wars!"; }
-  else if (q == "mtetris") { playTetris(); r = "Tetris!"; }
-  else if (q == "mpirate") { playPirates(); r = "Pirates!"; }
-  else if (q == "mhappy") { playHappy(); r = "Happy!"; }
-  else if (q == "mvic") { playVictory(); r = "Victory!"; }
+  else if (command == "mmario") { playMario(); response = "Mario! "; }
+  else if (command == "mstar") { playStarWars(); response = "Star Wars!"; }
+  else if (command == "mtetris") { playTetris(); response = "Tetris!"; }
+  else if (command == "mpirate") { playPirates(); response = "Pirates!"; }
+  else if (command == "mhappy") { playHappy(); response = "Happy!"; }
+  else if (command == "mvic") { playVictory(); response = "Victory!"; }
   
   // Oyun Efektleri
-  else if (q == "death") { deathMove(); r = "Oldu! "; }
-  else if (q == "gameover") { gameOverMove(); r = "Game Over!"; }
-  else if (q == "victory") { victoryMove(); r = "Zafer!"; }
-  else if (q == "hit") { hitEffect(); r = "Vuruldu!"; }
-  else if (q == "levelup") { levelUpEffect(); r = "Level Up!"; }
-  else if (q == "powerup") { powerUpEffect(); r = "Power Up!"; }
+  else if (command == "death") { deathMove(); response = "Oldu! "; }
+  else if (command == "gameover") { gameOverMove(); response = "Game Over!"; }
+  else if (command == "victory") { victoryMove(); response = "Zafer!"; }
+  else if (command == "hit") { hitEffect(); response = "Vuruldu!"; }
+  else if (command == "levelup") { levelUpEffect(); response = "Level Up!"; }
+  else if (command == "powerup") { powerUpEffect(); response = "Power Up!"; }
   
   // Ozel Hareketler
-  else if (q == "hello") { sayHello(); r = "Merhaba!"; }
-  else if (q == "bye") { sayBye(); r = "Gule gule!"; }
-  else if (q == "yes") { sayYes(); r = "Evet!"; }
-  else if (q == "no") { sayNo(); r = "Hayir!"; }
-  else if (q == "confused") { sayConfused(); r = "Anlamadim?"; }
-  else if (q == "love") { sayLove(); r = "Seni seviyorum!"; }
+  else if (command == "hello") { sayHello(); response = "Merhaba!"; }
+  else if (command == "bye") { sayBye(); response = "Gule gule!"; }
+  else if (command == "yes") { sayYes(); response = "Evet!"; }
+  else if (command == "no") { sayNo(); response = "Hayir!"; }
+  else if (command == "confused") { sayConfused(); response = "Anlamadim?"; }
+  else if (command == "love") { sayLove(); response = "Seni seviyorum!"; }
   
-  server.send(200, "text/plain", r);
+  server.send(200, "text/plain", response);
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -1855,11 +1855,11 @@ void setup() {
   WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASS);
   
-  int att = 0;
-  while (WiFi.status() != WL_CONNECTED && att < 30) {
+  int connectionAttempt = 0;
+  while (WiFi.status() != WL_CONNECTED && connectionAttempt < 30) {
     delay(500);
     Serial.print(".");
-    att++;
+    connectionAttempt++;
   }
   
   if (WiFi.status() == WL_CONNECTED) {

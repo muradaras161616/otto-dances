@@ -2,8 +2,8 @@
   "version": "2.0",
   "category": "music",
   "description": "Music synchronized dance movements",
-  "total_songs": 40,
-  "categories": ["pop", "rock", "kids", "movies", "games", "classics"],
+  "total_songs": 60,
+  "categories": ["pop", "rock", "kids", "movies", "games", "classics", "turkish"],
   "items": [
     {"id": "happy_birthday", "name": "Happy Birthday", "icon": "🎂"},
     {"id": "jingle_bells", "name": "Jingle Bells", "icon": "🔔"},
@@ -44,6 +44,26 @@
     {"id": "pink_panther", "name": "Pink Panther Theme", "icon": "🐆"},
     {"id": "james_bond", "name": "James Bond Theme", "icon": "🔫"},
     {"id": "ghostbusters", "name": "Ghostbusters Theme", "icon": "👻"},
-    {"id": "axel_f", "name": "Axel F", "icon": "🎹"}
+    {"id": "axel_f", "name": "Axel F", "icon": "🎹"},
+    {"id": "simarik", "name": "Şımarık", "artist": "Tarkan", "icon": "💋"},
+    {"id": "jest_oldu", "name": "Jest Oldu", "artist": "Mustafa Sandal", "icon": "🎭"},
+    {"id": "dum_tek_tek", "name": "Düm Tek Tek", "artist": "Hadise", "icon": "🇹🇷"},
+    {"id": "geri_don", "name": "Geri Dön", "artist": "Sezen Aksu", "icon": "💔"},
+    {"id": "donence", "name": "Dönence", "artist": "Barış Manço", "icon": "🔄"},
+    {"id": "bambaska_biri", "name": "Bambaşka Biri", "artist": "Ajda Pekkan", "icon": "👑"},
+    {"id": "istanbul_sonbahar", "name": "İstanbul'da Sonbahar", "artist": "Teoman", "icon": "🍂"},
+    {"id": "everyway_that_i_can", "name": "Everyway That I Can", "artist": "Sertab Erener", "icon": "🏆"},
+    {"id": "sude", "name": "Sude", "artist": "MFÖ", "icon": "🎵"},
+    {"id": "cakkidi", "name": "Çakkıdı", "artist": "Kenan Doğulu", "icon": "🎉"},
+    {"id": "sevdim_seni", "name": "Sevdim Seni Bir Kere", "artist": "Gülben Ergen", "icon": "💕"},
+    {"id": "hoscakal", "name": "Hoşçakal", "artist": "Bengü", "icon": "👋"},
+    {"id": "her_sey_yolunda", "name": "Her Şey Yolunda Merkez", "artist": "Athena", "icon": "🤘"},
+    {"id": "deli", "name": "Deli", "artist": "Mor ve Ötesi", "icon": "🎸"},
+    {"id": "geceler", "name": "Geceler", "artist": "Ezhel", "icon": "🌙"},
+    {"id": "cevapsiz_cinlama", "name": "Cevapsız Çınlama", "artist": "Aleyna Tilki", "icon": "📱"},
+    {"id": "sen_gel_diyorsun", "name": "Sen Gel Diyorsun", "artist": "Cem Adrian", "icon": "🎤"},
+    {"id": "felaket", "name": "Felaket", "artist": "Zeynep Bastık", "icon": "💃"},
+    {"id": "martilar", "name": "Martılar", "artist": "Edis", "icon": "🕊️"},
+    {"id": "janti", "name": "Janti", "artist": "Murat Boz", "icon": "😎"}
   ]
 }

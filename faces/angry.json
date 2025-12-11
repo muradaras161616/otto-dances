@@ -1,0 +1,96 @@
+{
+  "name": "Angry Face",
+  "emotion": "anger",
+  "intensity": "high",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [
+        [1,1,0,0,0,0,1,1],
+        [0,1,1,0,0,1,1,0],
+        [0,0,1,1,1,1,0,0],
+        [0,0,0,1,1,0,0,0],
+        [0,1,1,0,0,1,1,0],
+        [1,0,0,0,0,0,0,1],
+        [0,1,1,1,1,1,1,0],
+        [0,0,0,0,0,0,0,0]
+      ]
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [255, 200, 200],
+      "elements": [
+        {
+          "type": "line",
+          "x1": 25,
+          "y1": 40,
+          "x2": 45,
+          "y2": 50,
+          "color": [0, 0, 0],
+          "thickness": 3,
+          "label": "left_eyebrow"
+        },
+        {
+          "type": "line",
+          "x1": 103,
+          "y1": 40,
+          "x2": 83,
+          "y2": 50,
+          "color": [0, 0, 0],
+          "thickness": 3,
+          "label": "right_eyebrow"
+        },
+        {
+          "type": "circle",
+          "x": 40,
+          "y": 60,
+          "radius": 6,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "left_eye"
+        },
+        {
+          "type": "circle",
+          "x": 88,
+          "y": 60,
+          "radius": 6,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "right_eye"
+        },
+        {
+          "type": "line",
+          "x1": 40,
+          "y1": 95,
+          "x2": 88,
+          "y2": 95,
+          "color": [0, 0, 0],
+          "thickness": 3,
+          "label": "mouth"
+        }
+      ],
+      "animations": []
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": [
+        "  >     <    ",
+        "   O   O     ",
+        "             ",
+        "             ",
+        "             ",
+        "  ________   "
+      ]
+    },
+    "lcd_16x2": {
+      "line1": "  >_<        ",
+      "line2": "   ANGRY!    "
+    },
+    "rgb_led": {
+      "color": [255, 0, 0],
+      "pattern": "blink",
+      "speed_ms": 300,
+      "brightness": 255
+    }
+  }
+}

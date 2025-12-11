@@ -1,0 +1,97 @@
+{
+  "name": "Confused Face",
+  "emotion": "confusion",
+  "intensity": "medium",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [
+        [0,0,0,0,0,0,0,0],
+        [0,1,1,0,0,1,0,0],
+        [0,1,1,0,0,1,1,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,1,1,1,1,1,0,0],
+        [0,0,0,0,0,1,1,0],
+        [0,0,0,0,0,0,0,0]
+      ]
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [240, 230, 255],
+      "elements": [
+        {
+          "type": "circle",
+          "x": 35,
+          "y": 50,
+          "radius": 6,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "left_eye"
+        },
+        {
+          "type": "circle",
+          "x": 88,
+          "y": 55,
+          "radius": 8,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "right_eye"
+        },
+        {
+          "type": "arc",
+          "x": 64,
+          "y": 95,
+          "radius": 20,
+          "start_angle": 270,
+          "end_angle": 360,
+          "color": [0, 0, 0],
+          "thickness": 2,
+          "label": "mouth"
+        },
+        {
+          "type": "text",
+          "x": 100,
+          "y": 30,
+          "text": "?",
+          "font_size": 24,
+          "color": [150, 0, 200],
+          "rotation": 0,
+          "label": "question"
+        }
+      ],
+      "animations": [
+        {
+          "element": "question",
+          "property": "rotation",
+          "from": -10,
+          "to": 10,
+          "duration": 400,
+          "repeat": 3,
+          "yoyo": true
+        }
+      ]
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": [
+        "             ",
+        "   o     O   ",
+        "             ",
+        "      ?      ",
+        "             ",
+        "    /---     "
+      ]
+    },
+    "lcd_16x2": {
+      "line1": "  o_O   ?    ",
+      "line2": "  CONFUSED?  "
+    },
+    "rgb_led": {
+      "color": [150, 0, 200],
+      "pattern": "pulse",
+      "speed_ms": 800,
+      "brightness": 180
+    }
+  }
+}

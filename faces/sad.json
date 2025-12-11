@@ -1,0 +1,96 @@
+{
+  "name": "Sad Face",
+  "emotion": "sadness",
+  "intensity": "high",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [
+        [0,0,0,0,0,0,0,0],
+        [0,1,1,0,0,1,1,0],
+        [0,1,1,0,0,1,1,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,1,1,1,1,0,0],
+        [0,1,0,0,0,0,1,0],
+        [1,0,0,0,0,0,0,1],
+        [0,0,0,0,0,0,0,0]
+      ]
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [200, 220, 255],
+      "elements": [
+        {
+          "type": "circle",
+          "x": 40,
+          "y": 50,
+          "radius": 8,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "left_eye"
+        },
+        {
+          "type": "circle",
+          "x": 88,
+          "y": 50,
+          "radius": 8,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "right_eye"
+        },
+        {
+          "type": "arc",
+          "x": 64,
+          "y": 110,
+          "radius": 30,
+          "start_angle": 180,
+          "end_angle": 360,
+          "color": [0, 0, 0],
+          "thickness": 3,
+          "label": "frown"
+        },
+        {
+          "type": "circle",
+          "x": 45,
+          "y": 65,
+          "radius": 3,
+          "color": [100, 150, 255],
+          "fill": true,
+          "label": "tear"
+        }
+      ],
+      "animations": [
+        {
+          "element": "tear",
+          "property": "y",
+          "from": 65,
+          "to": 90,
+          "duration": 800,
+          "repeat": 1,
+          "yoyo": false
+        }
+      ]
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": [
+        "",
+        "   T     T   ",
+        "   |     |   ",
+        "             ",
+        "             ",
+        "   ______    "
+      ]
+    },
+    "lcd_16x2": {
+      "line1": "   T_T       ",
+      "line2": "    SAD...   "
+    },
+    "rgb_led": {
+      "color": [0, 100, 255],
+      "pattern": "pulse",
+      "speed_ms": 1000,
+      "brightness": 150
+    }
+  }
+}

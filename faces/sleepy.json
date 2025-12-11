@@ -1,0 +1,116 @@
+{
+  "name": "Sleepy Face",
+  "emotion": "sleepiness",
+  "intensity": "medium",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [
+        [0,0,0,0,0,0,0,0],
+        [0,1,1,1,1,1,1,0],
+        [0,0,0,0,0,0,0,0],
+        [0,1,1,1,1,1,1,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,1,1,1,1,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0]
+      ]
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [220, 220, 240],
+      "elements": [
+        {
+          "type": "line",
+          "x1": 30,
+          "y1": 50,
+          "x2": 50,
+          "y2": 50,
+          "color": [0, 0, 0],
+          "thickness": 2,
+          "label": "left_eye"
+        },
+        {
+          "type": "line",
+          "x1": 78,
+          "y1": 50,
+          "x2": 98,
+          "y2": 50,
+          "color": [0, 0, 0],
+          "thickness": 2,
+          "label": "right_eye"
+        },
+        {
+          "type": "arc",
+          "x": 64,
+          "y": 90,
+          "radius": 15,
+          "start_angle": 0,
+          "end_angle": 180,
+          "color": [0, 0, 0],
+          "thickness": 2,
+          "label": "mouth"
+        },
+        {
+          "type": "text",
+          "x": 100,
+          "y": 40,
+          "text": "Z",
+          "font_size": 20,
+          "color": [100, 100, 200],
+          "label": "z1"
+        },
+        {
+          "type": "text",
+          "x": 110,
+          "y": 25,
+          "text": "Z",
+          "font_size": 16,
+          "color": [100, 100, 200],
+          "label": "z2"
+        }
+      ],
+      "animations": [
+        {
+          "element": "z1",
+          "property": "y",
+          "from": 40,
+          "to": 20,
+          "duration": 1000,
+          "repeat": 3,
+          "yoyo": false
+        },
+        {
+          "element": "z2",
+          "property": "y",
+          "from": 25,
+          "to": 5,
+          "duration": 1200,
+          "repeat": 3,
+          "yoyo": false
+        }
+      ]
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": [
+        "             ",
+        "  ___   ___  ",
+        "             ",
+        "      -      ",
+        "             ",
+        "   ______    "
+      ]
+    },
+    "lcd_16x2": {
+      "line1": "  -_-    Z   ",
+      "line2": "  SLEEPY...  "
+    },
+    "rgb_led": {
+      "color": [200, 200, 255],
+      "pattern": "pulse",
+      "speed_ms": 2000,
+      "brightness": 100
+    }
+  }
+}

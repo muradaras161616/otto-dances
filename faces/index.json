@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "category": "faces",
+  "description": "Facial expressions for multiple display types",
+  "supported_displays": ["led_matrix_8x8", "tft_128x160", "oled_128x64", "lcd_16x2", "rgb_led"],
+  "items": [
+    {"id": "happy", "name": "Happy", "icon": "😊"},
+    {"id": "sad", "name": "Sad", "icon": "😢"},
+    {"id": "angry", "name": "Angry", "icon": "😠"},
+    {"id": "excited", "name": "Excited", "icon": "🤩"},
+    {"id": "love", "name": "Love", "icon": "😍"},
+    {"id": "sleepy", "name": "Sleepy", "icon": "😴"},
+    {"id": "surprised", "name": "Surprised", "icon": "😲"},
+    {"id": "confused", "name": "Confused", "icon": "😕"},
+    {"id": "cool", "name": "Cool", "icon": "😎"},
+    {"id": "wink", "name": "Wink", "icon": "😉"},
+    {"id": "tongue", "name": "Tongue Out", "icon": "😛"},
+    {"id": "dead", "name": "Dead", "icon": "😵"},
+    {"id": "heart_eyes", "name": "Heart Eyes", "icon": "😍"},
+    {"id": "smile", "name": "Smile", "icon": "🙂"},
+    {"id": "neutral", "name": "Neutral", "icon": "😐"}
+  ]
+}

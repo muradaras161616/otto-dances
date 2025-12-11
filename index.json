@@ -10,6 +10,7 @@
     {"id": "animals", "name": "Animals", "icon": "🐕", "count": 15},
     {"id": "games", "name": "Games", "icon": "🎮", "count": 15},
     {"id": "exercises", "name": "Exercises", "icon": "💪", "count": 15},
-    {"id": "sequences", "name": "Sequences", "icon": "🔗", "count": 15}
+    {"id": "sequences", "name": "Sequences", "icon": "🔗", "count": 15},
+    {"id": "faces", "name": "Faces", "icon": "😊", "count": 15}
   ]
 }

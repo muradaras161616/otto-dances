@@ -13,6 +13,7 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 |----------|------|----------|----------------|
 | Dances | 💃 | Popüler dans hareketleri | 15 |
 | Music | 🎵 | Müzik senkronizasyonlu hareketler | 15 |
+| Turkish Music | 🇹🇷 | Türk müziği ve geleneksel danslar | 20 |
 | Emotions | 😊 | Duygusal ifadeler | 15 |
 | Gestures | 👋 | Jest ve işaretler | 15 |
 | Actions | 🚶 | Temel hareketler | 15 |
@@ -61,6 +62,54 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 | we_will_rock_you | We Will Rock You | 👊 |
 | cantina_band | Cantina Band | 🎺 |
 | imperial_march | Imperial March | 👤 |
+
+## 🇹🇷 Türk Müziği (Turkish Music)
+
+Türk kültürünü müzik ve dans ile deneyimleyin! Bu kategori buzzer melodileri ile birlikte gelir.
+
+### Milli Marşlar ve Resmi Şarkılar (3 şarkı)
+
+| ID | İsim | Sanatçı | BPM | Zorluk | İkon |
+|---|---|---|---|---|---|
+| istiklal_marsi | İstiklal Marşı | Mehmet Akif Ersoy | 80 | Orta | 🇹🇷 |
+| 10_yil_marsi | Onuncu Yıl Marşı | Various | 120 | Kolay | 🎖️ |
+| genclik_marsi | Gençlik Marşı | Various | 110 | Kolay | ⚡ |
+
+### Türk Pop Klasikleri (7 şarkı)
+
+| ID | İsim | Sanatçı | BPM | Zorluk | İkon |
+|---|---|---|---|---|---|
+| tarkan_simarik | Şımarık | Tarkan | 128 | Orta | 💋 |
+| tarkan_kuzu_kuzu | Kuzu Kuzu | Tarkan | 115 | Orta | ❤️ |
+| sezen_aksu_git | Git | Sezen Aksu | 85 | Orta | 💔 |
+| ajda_pekkan_bambaska | Bambaşka | Ajda Pekkan | 120 | Kolay | ✨ |
+| hadise_dum_tek | Düm Tek Tek | Hadise | 138 | Zor | 🎤 |
+| sertab_erener_everyway | Everyway That I Can | Sertab Erener | 132 | Orta | 🏆 |
+| model_ya_sonrasi | Ya Sonrası | Model | 95 | Orta | 🌧️ |
+
+### Türk Rock (5 şarkı)
+
+| ID | İsim | Sanatçı | BPM | Zorluk | İkon |
+|---|---|---|---|---|---|
+| duman_her_seyi_yak | Her Şeyi Yak | Duman | 140 | Zor | 🔥 |
+| mor_ve_otesi_bir_derdim | Bir Derdim Var | Mor ve Ötesi | 125 | Orta | 🎸 |
+| manga_altin_gunler | Altın Günler | Manga | 145 | Zor | 🥇 |
+| teoman_papatya | Papatya | Teoman | 90 | Kolay | 🌼 |
+| athena_yalan | Yalan | Athena | 160 | Zor | 🎺 |
+
+### Geleneksel/Halk Müziği (5 şarkı)
+
+| ID | İsim | Bölge | BPM | Zorluk | İkon |
+|---|---|---|---|---|---|
+| zeybek_dance | Zeybek Oyunu | Ege Bölgesi | 60 | Zor | 🗡️ |
+| halay_dance | Halay | Doğu Anadolu | 140 | Orta | 💃 |
+| horon_dance | Horon | Karadeniz | 180 | Zor | 🌊 |
+| kasik_havasi | Kaşık Havası | İç Anadolu | 120 | Orta | 🥄 |
+| ciftetelli | Çiftetelli | Çeşitli | 100 | Orta | 💫 |
+
+### Buzzer Desteği
+
+Tüm Türk müziği şarkıları, ses çıkışı için buzzer melodileri içerir! Her şarkı, nota dizileri veya RTTTL formatında melodi verisi sağlar.
 
 ## 😊 Duygular (Emotions)
 

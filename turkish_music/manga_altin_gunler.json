@@ -1,0 +1,73 @@
+{
+  "name": "Altın Günler",
+  "artist": "Manga",
+  "bpm": 145,
+  "duration_seconds": 30,
+  "genre": "turkish_rock",
+  "difficulty": "hard",
+  
+  "buzzer": {
+    "enabled": true,
+    "format": "notes",
+    "melody": [
+      {"note": "D5", "duration": 207},
+      {"note": "D5", "duration": 207},
+      {"note": "E5", "duration": 207},
+      {"note": "F5", "duration": 414},
+      {"note": "REST", "duration": 100},
+      {"note": "E5", "duration": 207},
+      {"note": "D5", "duration": 207},
+      {"note": "C5", "duration": 414},
+      {"note": "REST", "duration": 100},
+      {"note": "D5", "duration": 207},
+      {"note": "E5", "duration": 207},
+      {"note": "F5", "duration": 414}
+    ],
+    "notes_reference": {
+      "C5": 523, "D5": 587, "E5": 659, "F5": 698, "REST": 0
+    }
+  },
+  
+  "movements": {
+    "style": "fast_rock",
+    "key_moments": [
+      {
+        "time_seconds": 0,
+        "label": "fast_intro",
+        "description": "High tempo rock",
+        "steps": [
+          [90, 90, 90, 90, 207],
+          [70, 110, 70, 110, 207],
+          [110, 70, 110, 70, 207],
+          [70, 110, 70, 110, 207]
+        ]
+      },
+      {
+        "time_seconds": 10,
+        "label": "energetic_rock",
+        "description": "Fast energetic moves",
+        "steps": [
+          [75, 105, 75, 105, 207],
+          [105, 75, 105, 75, 207],
+          [75, 105, 75, 105, 207],
+          [105, 75, 105, 75, 207],
+          [90, 90, 60, 120, 207],
+          [90, 90, 120, 60, 207]
+        ]
+      },
+      {
+        "time_seconds": 23,
+        "label": "rock_finale",
+        "description": "Powerful ending",
+        "steps": [
+          [70, 110, 70, 110, 207],
+          [110, 70, 110, 70, 207],
+          [90, 90, 90, 90, 414]
+        ]
+      }
+    ]
+  },
+  
+  "lyrics_snippet": "Altın günler gelecek",
+  "notes": "Fast-paced Turkish rock anthem"
+}

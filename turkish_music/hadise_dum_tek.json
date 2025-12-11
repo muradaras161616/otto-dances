@@ -1,0 +1,75 @@
+{
+  "name": "Düm Tek Tek",
+  "artist": "Hadise",
+  "bpm": 138,
+  "duration_seconds": 30,
+  "genre": "turkish_pop",
+  "difficulty": "hard",
+  
+  "buzzer": {
+    "enabled": true,
+    "format": "notes",
+    "melody": [
+      {"note": "E5", "duration": 217},
+      {"note": "E5", "duration": 217},
+      {"note": "F5", "duration": 217},
+      {"note": "E5", "duration": 217},
+      {"note": "D5", "duration": 434},
+      {"note": "REST", "duration": 100},
+      {"note": "E5", "duration": 217},
+      {"note": "F5", "duration": 217},
+      {"note": "G5", "duration": 434},
+      {"note": "REST", "duration": 100},
+      {"note": "F5", "duration": 217},
+      {"note": "E5", "duration": 217},
+      {"note": "D5", "duration": 434}
+    ],
+    "notes_reference": {
+      "D5": 587, "E5": 659, "F5": 698, "G5": 784, "REST": 0
+    }
+  },
+  
+  "movements": {
+    "style": "eurovision_dance",
+    "key_moments": [
+      {
+        "time_seconds": 0,
+        "label": "fast_intro",
+        "description": "High energy Eurovision style",
+        "steps": [
+          [90, 90, 90, 90, 217],
+          [70, 110, 70, 110, 217],
+          [110, 70, 110, 70, 217],
+          [70, 110, 70, 110, 217],
+          [90, 90, 90, 90, 217]
+        ]
+      },
+      {
+        "time_seconds": 10,
+        "label": "chorus_energy",
+        "description": "Fast dance moves",
+        "steps": [
+          [75, 105, 80, 100, 217],
+          [105, 75, 100, 80, 217],
+          [75, 105, 80, 100, 217],
+          [105, 75, 100, 80, 217],
+          [90, 90, 60, 120, 217],
+          [90, 90, 120, 60, 217]
+        ]
+      },
+      {
+        "time_seconds": 22,
+        "label": "finale",
+        "description": "Fast ending",
+        "steps": [
+          [70, 110, 75, 105, 217],
+          [110, 70, 105, 75, 217],
+          [90, 90, 90, 90, 434]
+        ]
+      }
+    ]
+  },
+  
+  "lyrics_snippet": "Düm tek tek, baby you're perfect",
+  "notes": "Eurovision 2009 Turkish entry - high energy dance"
+}

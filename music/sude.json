@@ -1,0 +1,43 @@
+{
+  "name": "Sude",
+  "artist": "MFÖ",
+  "bpm": 115,
+  "duration_seconds": 24,
+  "genre": "pop",
+  "difficulty": "medium",
+  "sync_to_beat": true,
+  "key_moments": [
+    {
+      "time_seconds": 0,
+      "label": "intro",
+      "steps": [
+        [90, 90, 90, 90, 522],
+        [85, 95, 85, 95, 261],
+        [95, 85, 95, 85, 261]
+      ]
+    },
+    {
+      "time_seconds": 8,
+      "label": "groove",
+      "steps": [
+        [80, 100, 75, 105, 261],
+        [100, 80, 105, 75, 261],
+        [90, 90, 90, 90, 261],
+        [75, 105, 80, 100, 261],
+        [105, 75, 100, 80, 261]
+      ]
+    },
+    {
+      "time_seconds": 16,
+      "label": "funky",
+      "steps": [
+        [70, 110, 75, 105, 261],
+        [110, 70, 105, 75, 261],
+        [85, 95, 90, 90, 261],
+        [95, 85, 90, 90, 261]
+      ]
+    }
+  ],
+  "repeat": 2,
+  "notes": "Funky Turkish pop, groovy movements with retro vibe"
+}

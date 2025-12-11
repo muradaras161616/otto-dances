@@ -77,11 +77,11 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 |---|---|---|---|---|
 | baby_shark | Baby Shark | Kids Song | 110 | 🦈 |
 | frozen_let_it_go | Frozen - Let It Go | Disney | 137 | ❄️ |
-| let_it_go_frozen | Let It Go (Frozen) | Disney | 137 | ❄️ |
 | hakuna_matata | Hakuna Matata | Lion King | 125 | 🦁 |
 | under_the_sea | Under the Sea | Little Mermaid | 180 | 🐠 |
 | wheels_on_bus | Wheels on the Bus | Kids Song | 120 | 🚌 |
 | old_macdonald | Old MacDonald Had a Farm | Kids Song | 120 | 🚜 |
+| whole_new_world | A Whole New World | Aladdin | 126 | 🧞 |
 | happy_birthday | Happy Birthday | Traditional | 120 | 🎂 |
 | jingle_bells | Jingle Bells | Traditional | - | 🔔 |
 

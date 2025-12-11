@@ -1,6 +1,9 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "music",
+  "description": "Music synchronized dance movements",
+  "total_songs": 40,
+  "categories": ["pop", "rock", "kids", "movies", "games", "classics"],
   "items": [
     {"id": "happy_birthday", "name": "Happy Birthday", "icon": "🎂"},
     {"id": "jingle_bells", "name": "Jingle Bells", "icon": "🔔"},
@@ -16,6 +19,31 @@
     {"id": "eye_of_tiger", "name": "Eye of the Tiger", "icon": "🐯"},
     {"id": "we_will_rock_you", "name": "We Will Rock You", "icon": "👊"},
     {"id": "cantina_band", "name": "Cantina Band", "icon": "🎺"},
-    {"id": "imperial_march", "name": "Imperial March", "icon": "👤"}
+    {"id": "imperial_march", "name": "Imperial March", "icon": "👤"},
+    {"id": "despacito", "name": "Despacito", "icon": "💃"},
+    {"id": "shape_of_you", "name": "Shape of You", "icon": "🎶"},
+    {"id": "uptown_funk", "name": "Uptown Funk", "icon": "🕺"},
+    {"id": "blinding_lights", "name": "Blinding Lights", "icon": "✨"},
+    {"id": "levitating", "name": "Levitating", "icon": "🌟"},
+    {"id": "bad_guy", "name": "Bad Guy", "icon": "😈"},
+    {"id": "old_town_road", "name": "Old Town Road", "icon": "🤠"},
+    {"id": "drivers_license", "name": "Drivers License", "icon": "🚗"},
+    {"id": "dance_monkey", "name": "Dance Monkey", "icon": "🐵"},
+    {"id": "señorita", "name": "Señorita", "icon": "🌹"},
+    {"id": "bohemian_rhapsody", "name": "Bohemian Rhapsody", "icon": "👑"},
+    {"id": "sweet_child", "name": "Sweet Child O' Mine", "icon": "🎸"},
+    {"id": "smells_like_teen", "name": "Smells Like Teen Spirit", "icon": "🎤"},
+    {"id": "back_in_black", "name": "Back in Black", "icon": "⚡"},
+    {"id": "livin_on_prayer", "name": "Livin' on a Prayer", "icon": "🙏"},
+    {"id": "let_it_go_frozen", "name": "Let It Go (Frozen)", "icon": "❄️"},
+    {"id": "hakuna_matata", "name": "Hakuna Matata", "icon": "🦁"},
+    {"id": "under_the_sea", "name": "Under the Sea", "icon": "🐠"},
+    {"id": "wheels_on_bus", "name": "Wheels on the Bus", "icon": "🚌"},
+    {"id": "old_macdonald", "name": "Old MacDonald Had a Farm", "icon": "🚜"},
+    {"id": "mission_impossible", "name": "Mission Impossible Theme", "icon": "🕵️"},
+    {"id": "pink_panther", "name": "Pink Panther Theme", "icon": "🐆"},
+    {"id": "james_bond", "name": "James Bond Theme", "icon": "🔫"},
+    {"id": "ghostbusters", "name": "Ghostbusters Theme", "icon": "👻"},
+    {"id": "axel_f", "name": "Axel F", "icon": "🎹"}
   ]
 }

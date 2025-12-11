@@ -12,7 +12,7 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 | Kategori | İkon | Açıklama | Hareket Sayısı |
 |----------|------|----------|----------------|
 | Dances | 💃 | Popüler dans hareketleri | 15 |
-| Music | 🎵 | Müzik senkronizasyonlu hareketler | 15 |
+| Music | 🎵 | Müzik senkronizasyonlu hareketler | 40 |
 | Emotions | 😊 | Duygusal ifadeler | 15 |
 | Gestures | 👋 | Jest ve işaretler | 15 |
 | Actions | 🚶 | Temel hareketler | 15 |
@@ -44,23 +44,71 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 
 ## 🎵 Müzik (Music)
 
-| ID | İsim | İkon |
-|---|---|---|
-| happy_birthday | Happy Birthday | 🎂 |
-| jingle_bells | Jingle Bells | 🔔 |
-| starwars_theme | Star Wars Theme | ⭐ |
-| pirates_caribbean | Pirates of the Caribbean | 🏴‍☠️ |
-| baby_shark | Baby Shark | 🦈 |
-| tetris_theme | Tetris Theme | 🎮 |
-| mario_theme | Mario Theme | 🍄 |
-| zelda_theme | Zelda Theme | 🗡️ |
-| pokemon_theme | Pokemon Theme | ⚡ |
-| avengers_theme | Avengers Theme | 🦸 |
-| frozen_let_it_go | Frozen - Let It Go | ❄️ |
-| eye_of_tiger | Eye of the Tiger | 🐯 |
-| we_will_rock_you | We Will Rock You | 👊 |
-| cantina_band | Cantina Band | 🎺 |
-| imperial_march | Imperial March | 👤 |
+### Pop/Dance Hits
+
+| ID | Song | Artist | BPM | Icon |
+|---|---|---|---|---|
+| despacito | Despacito | Luis Fonsi | 89 | 💃 |
+| shape_of_you | Shape of You | Ed Sheeran | 96 | 🎶 |
+| uptown_funk | Uptown Funk | Bruno Mars | 115 | 🕺 |
+| blinding_lights | Blinding Lights | The Weeknd | 171 | ✨ |
+| levitating | Levitating | Dua Lipa | 103 | 🌟 |
+| bad_guy | Bad Guy | Billie Eilish | 135 | 😈 |
+| old_town_road | Old Town Road | Lil Nas X | 136 | 🤠 |
+| drivers_license | Drivers License | Olivia Rodrigo | 144 | 🚗 |
+| dance_monkey | Dance Monkey | Tones and I | 98 | 🐵 |
+| señorita | Señorita | Shawn Mendes | 117 | 🌹 |
+
+### Rock/Classic Rock
+
+| ID | Song | Artist | BPM | Icon |
+|---|---|---|---|---|
+| bohemian_rhapsody | Bohemian Rhapsody | Queen | 144 | 👑 |
+| sweet_child | Sweet Child O' Mine | Guns N' Roses | 125 | 🎸 |
+| smells_like_teen | Smells Like Teen Spirit | Nirvana | 117 | 🎤 |
+| back_in_black | Back in Black | AC/DC | 93 | ⚡ |
+| livin_on_prayer | Livin' on a Prayer | Bon Jovi | 123 | 🙏 |
+| eye_of_tiger | Eye of the Tiger | Survivor | - | 🐯 |
+| we_will_rock_you | We Will Rock You | Queen | - | 👊 |
+
+### Kids/Family Songs
+
+| ID | Song | Artist | BPM | Icon |
+|---|---|---|---|---|
+| baby_shark | Baby Shark | Kids Song | 110 | 🦈 |
+| frozen_let_it_go | Frozen - Let It Go | Disney | 137 | ❄️ |
+| let_it_go_frozen | Let It Go (Frozen) | Disney | 137 | ❄️ |
+| hakuna_matata | Hakuna Matata | Lion King | 125 | 🦁 |
+| under_the_sea | Under the Sea | Little Mermaid | 180 | 🐠 |
+| wheels_on_bus | Wheels on the Bus | Kids Song | 120 | 🚌 |
+| old_macdonald | Old MacDonald Had a Farm | Kids Song | 120 | 🚜 |
+| happy_birthday | Happy Birthday | Traditional | 120 | 🎂 |
+| jingle_bells | Jingle Bells | Traditional | - | 🔔 |
+
+### Movie/TV Themes
+
+| ID | Song | Artist | BPM | Icon |
+|---|---|---|---|---|
+| mission_impossible | Mission Impossible Theme | MI | 160 | 🕵️ |
+| pink_panther | Pink Panther Theme | Pink Panther | 115 | 🐆 |
+| james_bond | James Bond Theme | 007 | 138 | 🔫 |
+| ghostbusters | Ghostbusters Theme | Ghostbusters | 116 | 👻 |
+| axel_f | Axel F | Beverly Hills Cop | 125 | 🎹 |
+| starwars_theme | Star Wars Theme | Star Wars | - | ⭐ |
+| pirates_caribbean | Pirates of the Caribbean | POTC | - | 🏴‍☠️ |
+| avengers_theme | Avengers Theme | Marvel | - | 🦸 |
+| imperial_march | Imperial March | Star Wars | - | 👤 |
+| cantina_band | Cantina Band | Star Wars | - | 🎺 |
+
+### Game/Video Game Music
+
+| ID | Song | Artist | BPM | Icon |
+|---|---|---|---|---|
+| tetris_theme | Tetris Theme | Tetris | - | 🎮 |
+| mario_theme | Mario Theme | Super Mario | - | 🍄 |
+| zelda_theme | Zelda Theme | Legend of Zelda | - | 🗡️ |
+| pokemon_theme | Pokemon Theme | Pokemon | - | ⚡ |
+
 
 ## 😊 Duygular (Emotions)
 

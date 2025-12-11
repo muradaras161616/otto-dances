@@ -2,7 +2,7 @@
   "version": "2.0",
   "categories": [
     {"id": "dances", "name": "Dances", "icon": "💃", "count": 15},
-    {"id": "music", "name": "Music", "icon": "🎵", "count": 15},
+    {"id": "music", "name": "Music", "icon": "🎵", "count": 40},
     {"id": "emotions", "name": "Emotions", "icon": "😊", "count": 15},
     {"id": "gestures", "name": "Gestures", "icon": "👋", "count": 15},
     {"id": "actions", "name": "Actions", "icon": "🚶", "count": 15},

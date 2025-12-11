@@ -1,0 +1,44 @@
+{
+  "name": "Hakuna Matata",
+  "artist": "The Lion King",
+  "bpm": 125,
+  "duration_seconds": 25,
+  "genre": "kids",
+  "difficulty": "easy",
+  "sync_to_beat": true,
+  "key_moments": [
+    {
+      "time_seconds": 0,
+      "label": "intro",
+      "steps": [
+        [90, 90, 90, 90, 500],
+        [80, 100, 80, 100, 240],
+        [100, 80, 100, 80, 240]
+      ]
+    },
+    {
+      "time_seconds": 8,
+      "label": "chorus",
+      "steps": [
+        [75, 105, 75, 105, 240],
+        [105, 75, 105, 75, 240],
+        [90, 90, 70, 110, 240],
+        [90, 90, 110, 70, 240],
+        [80, 100, 85, 95, 240],
+        [100, 80, 95, 85, 240]
+      ]
+    },
+    {
+      "time_seconds": 16,
+      "label": "bridge",
+      "steps": [
+        [85, 95, 80, 100, 240],
+        [95, 85, 100, 80, 240],
+        [90, 90, 85, 95, 240],
+        [90, 90, 95, 85, 240]
+      ]
+    }
+  ],
+  "repeat": 2,
+  "notes": "Upbeat carefree movements with jungle vibes"
+}

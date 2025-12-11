@@ -79,6 +79,7 @@
           "end_angle": 270,
           "color": [100, 100, 100],
           "thickness": 2,
+          "rotation": 0,
           "label": "spiral"
         }
       ],

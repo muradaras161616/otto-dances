@@ -1,0 +1,75 @@
+{
+  "name": "Yalan",
+  "artist": "Athena",
+  "bpm": 160,
+  "duration_seconds": 28,
+  "genre": "turkish_ska_punk",
+  "difficulty": "hard",
+  
+  "buzzer": {
+    "enabled": true,
+    "format": "notes",
+    "melody": [
+      {"note": "C5", "duration": 187},
+      {"note": "D5", "duration": 187},
+      {"note": "E5", "duration": 187},
+      {"note": "D5", "duration": 187},
+      {"note": "C5", "duration": 375},
+      {"note": "REST", "duration": 100},
+      {"note": "E5", "duration": 187},
+      {"note": "F5", "duration": 187},
+      {"note": "G5", "duration": 375},
+      {"note": "REST", "duration": 100},
+      {"note": "F5", "duration": 187},
+      {"note": "E5", "duration": 187},
+      {"note": "D5", "duration": 375}
+    ],
+    "notes_reference": {
+      "C5": 523, "D5": 587, "E5": 659, "F5": 698, "G5": 784, "REST": 0
+    }
+  },
+  
+  "movements": {
+    "style": "ska_punk",
+    "key_moments": [
+      {
+        "time_seconds": 0,
+        "label": "ska_start",
+        "description": "Fast ska-punk energy",
+        "steps": [
+          [90, 90, 90, 90, 187],
+          [75, 105, 75, 105, 187],
+          [105, 75, 105, 75, 187],
+          [75, 105, 75, 105, 187],
+          [90, 90, 90, 90, 187]
+        ]
+      },
+      {
+        "time_seconds": 10,
+        "label": "punk_jump",
+        "description": "Punk rock jumping",
+        "steps": [
+          [70, 110, 60, 120, 187],
+          [90, 90, 90, 90, 93],
+          [110, 70, 120, 60, 187],
+          [90, 90, 90, 90, 93],
+          [70, 110, 60, 120, 187],
+          [110, 70, 120, 60, 187]
+        ]
+      },
+      {
+        "time_seconds": 22,
+        "label": "ska_finale",
+        "description": "Fast finish",
+        "steps": [
+          [75, 105, 75, 105, 187],
+          [105, 75, 105, 75, 187],
+          [90, 90, 90, 90, 375]
+        ]
+      }
+    ]
+  },
+  
+  "lyrics_snippet": "Yalan",
+  "notes": "High-energy Turkish ska-punk"
+}

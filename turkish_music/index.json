@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "category": "turkish_music",
+  "description": "Turkish music with dance movements and buzzer melodies",
+  "total_songs": 20,
+  "subcategories": ["anthems", "pop", "rock", "traditional"],
+  "items": [
+    {"id": "istiklal_marsi", "name": "İstiklal Marşı", "artist": "Mehmet Akif Ersoy", "category": "anthems", "icon": "🇹🇷"},
+    {"id": "10_yil_marsi", "name": "Onuncu Yıl Marşı", "artist": "Various", "category": "anthems", "icon": "🎖️"},
+    {"id": "genclik_marsi", "name": "Gençlik Marşı", "artist": "Various", "category": "anthems", "icon": "⚡"},
+    {"id": "tarkan_simarik", "name": "Şımarık", "artist": "Tarkan", "category": "pop", "icon": "💋"},
+    {"id": "tarkan_kuzu_kuzu", "name": "Kuzu Kuzu", "artist": "Tarkan", "category": "pop", "icon": "❤️"},
+    {"id": "sezen_aksu_git", "name": "Git", "artist": "Sezen Aksu", "category": "pop", "icon": "💔"},
+    {"id": "ajda_pekkan_bambaska", "name": "Bambaşka", "artist": "Ajda Pekkan", "category": "pop", "icon": "✨"},
+    {"id": "hadise_dum_tek", "name": "Düm Tek Tek", "artist": "Hadise", "category": "pop", "icon": "🎤"},
+    {"id": "sertab_erener_everyway", "name": "Everyway That I Can", "artist": "Sertab Erener", "category": "pop", "icon": "🏆"},
+    {"id": "model_ya_sonrasi", "name": "Ya Sonrası", "artist": "Model", "category": "pop", "icon": "🌧️"},
+    {"id": "duman_her_seyi_yak", "name": "Her Şeyi Yak", "artist": "Duman", "category": "rock", "icon": "🔥"},
+    {"id": "mor_ve_otesi_bir_derdim", "name": "Bir Derdim Var", "artist": "Mor ve Ötesi", "category": "rock", "icon": "🎸"},
+    {"id": "manga_altin_gunler", "name": "Altın Günler", "artist": "Manga", "category": "rock", "icon": "🥇"},
+    {"id": "teoman_papatya", "name": "Papatya", "artist": "Teoman", "category": "rock", "icon": "🌼"},
+    {"id": "athena_yalan", "name": "Yalan", "artist": "Athena", "category": "rock", "icon": "🎺"},
+    {"id": "zeybek_dance", "name": "Zeybek Oyunu", "artist": "Traditional", "category": "traditional", "icon": "🗡️"},
+    {"id": "halay_dance", "name": "Halay", "artist": "Traditional", "category": "traditional", "icon": "💃"},
+    {"id": "horon_dance", "name": "Horon", "artist": "Traditional", "category": "traditional", "icon": "🌊"},
+    {"id": "kasik_havasi", "name": "Kaşık Havası", "artist": "Traditional", "category": "traditional", "icon": "🥄"},
+    {"id": "ciftetelli", "name": "Çiftetelli", "artist": "Traditional", "category": "traditional", "icon": "💫"}
+  ]
+}

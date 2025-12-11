@@ -1,0 +1,79 @@
+{
+  "name": "Horon",
+  "artist": "Traditional",
+  "bpm": 180,
+  "duration_seconds": 32,
+  "genre": "turkish_folk",
+  "difficulty": "hard",
+  "region": "Black Sea",
+  
+  "buzzer": {
+    "enabled": true,
+    "format": "notes",
+    "melody": [
+      {"note": "E5", "duration": 200},
+      {"note": "D5", "duration": 200},
+      {"note": "C5", "duration": 200},
+      {"note": "D5", "duration": 200},
+      {"note": "E5", "duration": 400},
+      {"note": "REST", "duration": 100},
+      {"note": "D5", "duration": 200},
+      {"note": "C5", "duration": 200},
+      {"note": "B4", "duration": 400},
+      {"note": "REST", "duration": 100},
+      {"note": "C5", "duration": 200},
+      {"note": "D5", "duration": 200},
+      {"note": "E5", "duration": 400}
+    ],
+    "notes_reference": {
+      "B4": 494, "C5": 523, "D5": 587, "E5": 659, "REST": 0
+    }
+  },
+  
+  "movements": {
+    "style": "fast_trembling",
+    "characteristics": "Rapid shoulder movements, fast footwork",
+    "key_moments": [
+      {
+        "time_seconds": 0,
+        "label": "horon_start",
+        "description": "Fast Black Sea dance",
+        "steps": [
+          [90, 90, 90, 90, 200],
+          [80, 100, 80, 100, 200],
+          [100, 80, 100, 80, 200],
+          [80, 100, 80, 100, 200],
+          [90, 90, 90, 90, 200]
+        ]
+      },
+      {
+        "time_seconds": 10,
+        "label": "trembling_dance",
+        "description": "Rapid trembling movements",
+        "steps": [
+          [85, 95, 85, 95, 200],
+          [95, 85, 95, 85, 200],
+          [85, 95, 85, 95, 200],
+          [95, 85, 95, 85, 200],
+          [85, 95, 85, 95, 200],
+          [95, 85, 95, 85, 200]
+        ]
+      },
+      {
+        "time_seconds": 22,
+        "label": "fast_finale",
+        "description": "Very fast ending",
+        "steps": [
+          [75, 105, 75, 105, 200],
+          [105, 75, 105, 75, 200],
+          [75, 105, 75, 105, 200],
+          [105, 75, 105, 75, 200],
+          [90, 90, 90, 90, 400]
+        ]
+      }
+    ]
+  },
+  
+  "cultural_notes": "Fast-paced traditional Black Sea dance",
+  "dance_context": "High-energy dance with rapid trembling shoulder movements"
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Everyway That I Can",
+  "artist": "Sertab Erener",
+  "bpm": 132,
+  "duration_seconds": 32,
+  "genre": "turkish_pop",
+  "difficulty": "medium",
+  
+  "buzzer": {
+    "enabled": true,
+    "format": "notes",
+    "melody": [
+      {"note": "A4", "duration": 227},
+      {"note": "B4", "duration": 227},
+      {"note": "C5", "duration": 227},
+      {"note": "D5", "duration": 454},
+      {"note": "REST", "duration": 100},
+      {"note": "D5", "duration": 227},
+      {"note": "E5", "duration": 227},
+      {"note": "F5", "duration": 454},
+      {"note": "REST", "duration": 100},
+      {"note": "E5", "duration": 227},
+      {"note": "D5", "duration": 227},
+      {"note": "C5", "duration": 454}
+    ],
+    "notes_reference": {
+      "A4": 440, "B4": 494, "C5": 523, "D5": 587, "E5": 659, "F5": 698, "REST": 0
+    }
+  },
+  
+  "movements": {
+    "style": "winner_dance",
+    "key_moments": [
+      {
+        "time_seconds": 0,
+        "label": "champion_start",
+        "description": "Eurovision winner energy",
+        "steps": [
+          [90, 90, 90, 90, 227],
+          [75, 105, 75, 105, 227],
+          [105, 75, 105, 75, 227],
+          [75, 105, 75, 105, 227]
+        ]
+      },
+      {
+        "time_seconds": 10,
+        "label": "victory_dance",
+        "description": "Powerful dance moves",
+        "steps": [
+          [70, 110, 70, 110, 227],
+          [90, 90, 90, 90, 113],
+          [110, 70, 110, 70, 227],
+          [90, 90, 90, 90, 113],
+          [70, 110, 80, 100, 227],
+          [110, 70, 100, 80, 227]
+        ]
+      },
+      {
+        "time_seconds": 24,
+        "label": "champion_finish",
+        "description": "Victory pose",
+        "steps": [
+          [80, 100, 70, 110, 227],
+          [100, 80, 110, 70, 227],
+          [90, 90, 90, 90, 454]
+        ]
+      }
+    ]
+  },
+  
+  "lyrics_snippet": "Everyway that I can",
+  "notes": "Eurovision 2003 Winner - Turkey's triumph"
+}

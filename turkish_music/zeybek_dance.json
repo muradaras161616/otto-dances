@@ -1,0 +1,72 @@
+{
+  "name": "Zeybek Oyunu",
+  "artist": "Traditional",
+  "bpm": 60,
+  "duration_seconds": 40,
+  "genre": "turkish_traditional",
+  "difficulty": "hard",
+  "region": "Aegean Region",
+  
+  "buzzer": {
+    "enabled": true,
+    "format": "notes",
+    "melody": [
+      {"note": "D4", "duration": 1000},
+      {"note": "E4", "duration": 500},
+      {"note": "D4", "duration": 500},
+      {"note": "C4", "duration": 1000},
+      {"note": "D4", "duration": 1000},
+      {"note": "REST", "duration": 500},
+      {"note": "E4", "duration": 1000},
+      {"note": "F4", "duration": 500},
+      {"note": "E4", "duration": 500},
+      {"note": "D4", "duration": 1500}
+    ],
+    "notes_reference": {
+      "C4": 262, "D4": 294, "E4": 330, "F4": 349, "REST": 0
+    }
+  },
+  
+  "movements": {
+    "style": "slow_dignified",
+    "characteristics": "Low stance, deliberate movements",
+    "key_moments": [
+      {
+        "time_seconds": 0,
+        "label": "zeybek_stance",
+        "description": "Characteristic zeybek crouch",
+        "steps": [
+          [70, 110, 60, 120, 1000],
+          [75, 105, 65, 115, 500],
+          [70, 110, 60, 120, 500],
+          [75, 105, 65, 115, 1000]
+        ]
+      },
+      {
+        "time_seconds": 10,
+        "label": "arm_extension",
+        "description": "Simulated arm spread",
+        "steps": [
+          [60, 120, 60, 120, 1000],
+          [90, 90, 90, 90, 500],
+          [60, 120, 60, 120, 1000],
+          [90, 90, 90, 90, 500]
+        ]
+      },
+      {
+        "time_seconds": 25,
+        "label": "warrior_stance",
+        "description": "Proud warrior posture",
+        "steps": [
+          [65, 115, 65, 115, 1000],
+          [70, 110, 70, 110, 500],
+          [65, 115, 65, 115, 1000],
+          [90, 90, 90, 90, 1500]
+        ]
+      }
+    ]
+  },
+  
+  "cultural_notes": "Traditional Aegean dance performed by brave warriors (zeybek)",
+  "dance_context": "Solo male dance with proud, dignified movements"
+}

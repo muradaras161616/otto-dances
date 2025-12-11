@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "actions",
+  "items": [
+    {"id": "walk_forward", "name": "Walk Forward", "icon": "🚶"},
+    {"id": "walk_backward", "name": "Walk Backward", "icon": "🚶"},
+    {"id": "turn_left", "name": "Turn Left", "icon": "↪️"},
+    {"id": "turn_right", "name": "Turn Right", "icon": "↩️"},
+    {"id": "jump", "name": "Jump", "icon": "🦘"},
+    {"id": "sit", "name": "Sit", "icon": "🪑"},
+    {"id": "standup", "name": "Stand Up", "icon": "🧍"},
+    {"id": "lean_left", "name": "Lean Left", "icon": "↖️"},
+    {"id": "lean_right", "name": "Lean Right", "icon": "↗️"},
+    {"id": "balance", "name": "Balance", "icon": "⚖️"},
+    {"id": "spin_360", "name": "Spin 360", "icon": "🔄"},
+    {"id": "tiptoe", "name": "Tiptoe", "icon": "🩰"},
+    {"id": "crouch", "name": "Crouch", "icon": "🧎"},
+    {"id": "stretch", "name": "Stretch", "icon": "🤸"},
+    {"id": "wobble", "name": "Wobble", "icon": "🫨"}
+  ]
+}

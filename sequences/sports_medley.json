@@ -1,0 +1,11 @@
+{
+  "name": "Sports Medley",
+  "type": "performance",
+  "total_duration_seconds": 75,
+  "sequence": [
+    {"category": "sports", "id": "kick", "repeat": 1},
+    {"category": "sports", "id": "basketball_shoot", "repeat": 1},
+    {"category": "sports", "id": "golf_swing", "repeat": 1},
+    {"category": "sports", "id": "victory_pose", "repeat": 1}
+  ]
+}

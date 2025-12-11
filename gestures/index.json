@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "gestures",
+  "items": [
+    {"id": "hello", "name": "Hello", "icon": "👋"},
+    {"id": "goodbye", "name": "Goodbye", "icon": "👋"},
+    {"id": "yes", "name": "Yes", "icon": "✅"},
+    {"id": "no", "name": "No", "icon": "❌"},
+    {"id": "clap", "name": "Clap", "icon": "👏"},
+    {"id": "point_left", "name": "Point Left", "icon": "👈"},
+    {"id": "point_right", "name": "Point Right", "icon": "👉"},
+    {"id": "bow", "name": "Bow", "icon": "🙇"},
+    {"id": "shrug", "name": "Shrug", "icon": "🤷"},
+    {"id": "thumbs_up", "name": "Thumbs Up", "icon": "👍"},
+    {"id": "wave_both_hands", "name": "Wave Both Hands", "icon": "🙌"},
+    {"id": "come_here", "name": "Come Here", "icon": "🫱"},
+    {"id": "stop", "name": "Stop", "icon": "✋"},
+    {"id": "thinking", "name": "Thinking", "icon": "🤔"},
+    {"id": "celebrate", "name": "Celebrate", "icon": "🎉"}
+  ]
+}

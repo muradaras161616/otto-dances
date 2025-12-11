@@ -1,0 +1,10 @@
+{
+  "name": "Quick Demo",
+  "type": "performance",
+  "total_duration_seconds": 30,
+  "sequence": [
+    {"category": "gestures", "id": "hello", "repeat": 1},
+    {"category": "dances", "id": "wave", "repeat": 1},
+    {"category": "gestures", "id": "goodbye", "repeat": 1}
+  ]
+}

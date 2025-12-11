@@ -1,0 +1,11 @@
+{
+  "name": "Show Time",
+  "type": "performance",
+  "total_duration_seconds": 90,
+  "sequence": [
+    {"category": "gestures", "id": "bow", "repeat": 1},
+    {"category": "dances", "id": "moonwalk", "repeat": 1},
+    {"category": "dances", "id": "robot", "repeat": 1},
+    {"category": "gestures", "id": "celebrate", "repeat": 2}
+  ]
+}

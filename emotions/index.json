@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "emotions",
+  "items": [
+    {"id": "happy", "name": "Happy", "icon": "😊"},
+    {"id": "sad", "name": "Sad", "icon": "😢"},
+    {"id": "angry", "name": "Angry", "icon": "😠"},
+    {"id": "excited", "name": "Excited", "icon": "🤩"},
+    {"id": "scared", "name": "Scared", "icon": "😨"},
+    {"id": "sleepy", "name": "Sleepy", "icon": "😴"},
+    {"id": "love", "name": "Love", "icon": "😍"},
+    {"id": "confused", "name": "Confused", "icon": "😕"},
+    {"id": "surprised", "name": "Surprised", "icon": "😲"},
+    {"id": "proud", "name": "Proud", "icon": "😤"},
+    {"id": "shy", "name": "Shy", "icon": "😳"},
+    {"id": "bored", "name": "Bored", "icon": "😑"},
+    {"id": "curious", "name": "Curious", "icon": "🤔"},
+    {"id": "determined", "name": "Determined", "icon": "😤"},
+    {"id": "relieved", "name": "Relieved", "icon": "😌"}
+  ]
+}

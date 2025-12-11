@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "animals",
+  "items": [
+    {"id": "dog", "name": "Dog", "icon": "🐕"},
+    {"id": "cat", "name": "Cat", "icon": "🐈"},
+    {"id": "bird", "name": "Bird", "icon": "🐦"},
+    {"id": "penguin", "name": "Penguin", "icon": "🐧"},
+    {"id": "dinosaur", "name": "Dinosaur", "icon": "🦖"},
+    {"id": "crab", "name": "Crab", "icon": "🦀"},
+    {"id": "monkey", "name": "Monkey", "icon": "🐒"},
+    {"id": "elephant", "name": "Elephant", "icon": "🐘"},
+    {"id": "rabbit", "name": "Rabbit", "icon": "🐇"},
+    {"id": "snake", "name": "Snake", "icon": "🐍"},
+    {"id": "frog", "name": "Frog", "icon": "🐸"},
+    {"id": "kangaroo", "name": "Kangaroo", "icon": "🦘"},
+    {"id": "chicken", "name": "Chicken", "icon": "🐔"},
+    {"id": "bear", "name": "Bear", "icon": "🐻"},
+    {"id": "butterfly", "name": "Butterfly", "icon": "🦋"}
+  ]
+}

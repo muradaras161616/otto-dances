@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "sports",
+  "items": [
+    {"id": "kick", "name": "Kick", "icon": "🦶"},
+    {"id": "punch", "name": "Punch", "icon": "👊"},
+    {"id": "celebrate_goal", "name": "Celebrate Goal", "icon": "⚽"},
+    {"id": "yoga_tree", "name": "Yoga Tree Pose", "icon": "🧘"},
+    {"id": "pushup", "name": "Push Up", "icon": "💪"},
+    {"id": "basketball_shoot", "name": "Basketball Shoot", "icon": "🏀"},
+    {"id": "golf_swing", "name": "Golf Swing", "icon": "⛳"},
+    {"id": "tennis_serve", "name": "Tennis Serve", "icon": "🎾"},
+    {"id": "boxing_combo", "name": "Boxing Combo", "icon": "🥊"},
+    {"id": "karate_stance", "name": "Karate Stance", "icon": "🥋"},
+    {"id": "football_dribble", "name": "Football Dribble", "icon": "⚽"},
+    {"id": "volleyball_spike", "name": "Volleyball Spike", "icon": "🏐"},
+    {"id": "baseball_pitch", "name": "Baseball Pitch", "icon": "⚾"},
+    {"id": "swimming_stroke", "name": "Swimming Stroke", "icon": "🏊"},
+    {"id": "victory_pose", "name": "Victory Pose", "icon": "🏆"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Party Mode",
+  "type": "playlist",
+  "total_duration_seconds": 120,
+  "sequence": [
+    {"category": "dances", "id": "disco", "repeat": 1},
+    {"category": "dances", "id": "floss", "repeat": 1},
+    {"category": "dances", "id": "hype", "repeat": 1},
+    {"category": "emotions", "id": "excited", "repeat": 2},
+    {"category": "gestures", "id": "celebrate", "repeat": 2}
+  ]
+}

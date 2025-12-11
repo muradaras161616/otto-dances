@@ -1,20 +1,15 @@
 {
-  "version": "1.0",
-  "dances": [
-    {"id": "gangnam", "name": "Gangnam Style", "icon": "🕺"},
-    {"id": "moonwalk", "name": "Moonwalk", "icon": "🌙"},
-    {"id": "floss", "name": "Floss", "icon": "🎮"},
-    {"id": "macarena", "name": "Macarena", "icon": "💃"},
-    {"id": "thriller", "name": "Thriller", "icon": "🧟"},
-    {"id": "russian", "name": "Russian Kick", "icon": "🦵"},
-    {"id": "chicken", "name": "Chicken Dance", "icon": "🐔"},
-    {"id": "dab", "name": "Dab", "icon": "🙆"},
-    {"id": "robot", "name": "Robot", "icon": "🤖"},
-    {"id": "shake", "name": "Shake", "icon": "🫨"},
-    {"id": "twerk", "name": "Twerk", "icon": "🍑"},
-    {"id": "wave", "name": "Wave", "icon": "👋"},
-    {"id": "disco", "name": "Disco", "icon": "🪩"},
-    {"id": "salsa", "name": "Salsa", "icon": "🌶️"},
-    {"id": "hype", "name": "Hype", "icon": "🔥"}
+  "version": "2.0",
+  "categories": [
+    {"id": "dances", "name": "Dances", "icon": "💃", "count": 15},
+    {"id": "music", "name": "Music", "icon": "🎵", "count": 15},
+    {"id": "emotions", "name": "Emotions", "icon": "😊", "count": 15},
+    {"id": "gestures", "name": "Gestures", "icon": "👋", "count": 15},
+    {"id": "actions", "name": "Actions", "icon": "🚶", "count": 15},
+    {"id": "sports", "name": "Sports", "icon": "⚽", "count": 15},
+    {"id": "animals", "name": "Animals", "icon": "🐕", "count": 15},
+    {"id": "games", "name": "Games", "icon": "🎮", "count": 15},
+    {"id": "exercises", "name": "Exercises", "icon": "💪", "count": 15},
+    {"id": "sequences", "name": "Sequences", "icon": "🔗", "count": 15}
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "Story Time",
+  "type": "performance",
+  "total_duration_seconds": 75,
+  "sequence": [
+    {"category": "animals", "id": "dog", "repeat": 1},
+    {"category": "animals", "id": "cat", "repeat": 1},
+    {"category": "animals", "id": "bird", "repeat": 1},
+    {"category": "emotions", "id": "happy", "repeat": 1}
+  ]
+}

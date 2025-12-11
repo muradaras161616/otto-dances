@@ -1,0 +1,11 @@
+{
+  "name": "Emotion Rollercoaster",
+  "type": "performance",
+  "total_duration_seconds": 60,
+  "sequence": [
+    {"category": "emotions", "id": "happy", "repeat": 1},
+    {"category": "emotions", "id": "surprised", "repeat": 1},
+    {"category": "emotions", "id": "excited", "repeat": 1},
+    {"category": "emotions", "id": "proud", "repeat": 1}
+  ]
+}

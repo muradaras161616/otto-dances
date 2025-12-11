@@ -1,0 +1,11 @@
+{
+  "name": "Workout Combo",
+  "type": "routine",
+  "total_duration_seconds": 120,
+  "sequence": [
+    {"category": "exercises", "id": "warmup", "repeat": 1},
+    {"category": "exercises", "id": "cardio_blast", "repeat": 1},
+    {"category": "exercises", "id": "leg_day", "repeat": 1},
+    {"category": "exercises", "id": "cooldown", "repeat": 1}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Random Fun",
+  "type": "playlist",
+  "total_duration_seconds": 85,
+  "sequence": [
+    {"category": "actions", "id": "jump", "repeat": 2},
+    {"category": "actions", "id": "spin_360", "repeat": 1},
+    {"category": "animals", "id": "frog", "repeat": 1},
+    {"category": "emotions", "id": "happy", "repeat": 1}
+  ]
+}

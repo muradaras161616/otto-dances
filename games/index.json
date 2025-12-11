@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "games",
+  "items": [
+    {"id": "rock_paper_scissors", "name": "Rock Paper Scissors", "icon": "✊"},
+    {"id": "dice_roll", "name": "Dice Roll", "icon": "🎲"},
+    {"id": "coin_flip", "name": "Coin Flip", "icon": "🪙"},
+    {"id": "hide_seek", "name": "Hide and Seek", "icon": "👀"},
+    {"id": "simon_says", "name": "Simon Says", "icon": "🗣️"},
+    {"id": "freeze_dance", "name": "Freeze Dance", "icon": "🧊"},
+    {"id": "musical_chairs", "name": "Musical Chairs", "icon": "🪑"},
+    {"id": "hopscotch", "name": "Hopscotch", "icon": "🔢"},
+    {"id": "limbo", "name": "Limbo", "icon": "🎯"},
+    {"id": "red_light_green_light", "name": "Red Light Green Light", "icon": "🚦"},
+    {"id": "follow_leader", "name": "Follow the Leader", "icon": "👣"},
+    {"id": "guess_number", "name": "Guess the Number", "icon": "🔮"},
+    {"id": "magic_trick", "name": "Magic Trick", "icon": "🎩"},
+    {"id": "peek_a_boo", "name": "Peek-a-Boo", "icon": "👻"},
+    {"id": "spin_bottle", "name": "Spin the Bottle", "icon": "🍾"}
+  ]
+}

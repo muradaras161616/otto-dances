@@ -1,0 +1,13 @@
+{
+  "name": "Gentle Movement",
+  "duration_minutes": 4,
+  "difficulty": "easy",
+  "target_area": "full_body",
+  "steps": [
+    [90, 90, 90, 90, 800],
+    [85, 95, 90, 90, 600],
+    [95, 85, 90, 90, 600],
+    [90, 90, 95, 95, 600],
+    [90, 90, 90, 90, 800]
+  ]
+}

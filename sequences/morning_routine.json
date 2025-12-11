@@ -1,0 +1,10 @@
+{
+  "name": "Morning Routine",
+  "type": "routine",
+  "total_duration_seconds": 45,
+  "sequence": [
+    {"category": "exercises", "id": "morning_stretch", "repeat": 1},
+    {"category": "emotions", "id": "happy", "repeat": 1},
+    {"category": "gestures", "id": "hello", "repeat": 1}
+  ]
+}

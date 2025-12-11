@@ -1,0 +1,12 @@
+{
+  "name": "Educational Sequence",
+  "type": "routine",
+  "total_duration_seconds": 90,
+  "sequence": [
+    {"category": "gestures", "id": "yes", "repeat": 1},
+    {"category": "gestures", "id": "no", "repeat": 1},
+    {"category": "gestures", "id": "hello", "repeat": 1},
+    {"category": "gestures", "id": "goodbye", "repeat": 1},
+    {"category": "gestures", "id": "thumbs_up", "repeat": 1}
+  ]
+}

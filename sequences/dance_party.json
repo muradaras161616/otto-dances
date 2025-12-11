@@ -1,0 +1,10 @@
+{
+  "name": "Dance Party",
+  "type": "playlist",
+  "total_duration_seconds": 60,
+  "sequence": [
+    {"category": "dances", "id": "gangnam", "repeat": 2},
+    {"category": "dances", "id": "floss", "repeat": 1},
+    {"category": "emotions", "id": "excited", "repeat": 1}
+  ]
+}

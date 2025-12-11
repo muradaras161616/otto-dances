@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "exercises",
+  "items": [
+    {"id": "morning_stretch", "name": "Morning Stretch", "icon": "🌅"},
+    {"id": "warmup", "name": "Warm Up", "icon": "🔥"},
+    {"id": "cooldown", "name": "Cool Down", "icon": "❄️"},
+    {"id": "cardio_blast", "name": "Cardio Blast", "icon": "💨"},
+    {"id": "leg_day", "name": "Leg Day", "icon": "🦵"},
+    {"id": "arm_workout", "name": "Arm Workout", "icon": "💪"},
+    {"id": "core_strength", "name": "Core Strength", "icon": "🎯"},
+    {"id": "flexibility", "name": "Flexibility", "icon": "🤸"},
+    {"id": "balance_training", "name": "Balance Training", "icon": "⚖️"},
+    {"id": "quick_energizer", "name": "Quick Energizer", "icon": "⚡"},
+    {"id": "desk_break", "name": "Desk Break", "icon": "💺"},
+    {"id": "bedtime_relaxation", "name": "Bedtime Relaxation", "icon": "🌙"},
+    {"id": "power_workout", "name": "Power Workout", "icon": "🔋"},
+    {"id": "gentle_movement", "name": "Gentle Movement", "icon": "🕊️"},
+    {"id": "full_body", "name": "Full Body", "icon": "🏋️"}
+  ]
+}

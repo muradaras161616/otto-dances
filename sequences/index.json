@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "sequences",
+  "items": [
+    {"id": "dance_party", "name": "Dance Party", "icon": "🎉"},
+    {"id": "morning_routine", "name": "Morning Routine", "icon": "🌅"},
+    {"id": "show_time", "name": "Show Time", "icon": "🎭"},
+    {"id": "workout_combo", "name": "Workout Combo", "icon": "💪"},
+    {"id": "story_time", "name": "Story Time", "icon": "📖"},
+    {"id": "animal_parade", "name": "Animal Parade", "icon": "🦁"},
+    {"id": "emotion_rollercoaster", "name": "Emotion Rollercoaster", "icon": "🎢"},
+    {"id": "sports_medley", "name": "Sports Medley", "icon": "🏅"},
+    {"id": "music_mix", "name": "Music Mix", "icon": "🎵"},
+    {"id": "game_night", "name": "Game Night", "icon": "🎮"},
+    {"id": "quick_demo", "name": "Quick Demo", "icon": "⚡"},
+    {"id": "full_performance", "name": "Full Performance", "icon": "🌟"},
+    {"id": "educational_sequence", "name": "Educational Sequence", "icon": "📚"},
+    {"id": "party_mode", "name": "Party Mode", "icon": "🎊"},
+    {"id": "random_fun", "name": "Random Fun", "icon": "🎲"}
+  ]
+}

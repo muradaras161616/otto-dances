@@ -1,0 +1,13 @@
+{
+  "name": "Arm Workout",
+  "duration_minutes": 4,
+  "difficulty": "medium",
+  "target_area": "arms",
+  "steps": [
+    [90, 90, 90, 90, 300],
+    [90, 90, 60, 60, 400],
+    [90, 90, 90, 90, 300],
+    [90, 90, 60, 60, 400],
+    [90, 90, 90, 90, 300]
+  ]
+}

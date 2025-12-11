@@ -1,0 +1,11 @@
+{
+  "name": "Animal Parade",
+  "type": "performance",
+  "total_duration_seconds": 90,
+  "sequence": [
+    {"category": "animals", "id": "penguin", "repeat": 1},
+    {"category": "animals", "id": "dinosaur", "repeat": 1},
+    {"category": "animals", "id": "monkey", "repeat": 1},
+    {"category": "animals", "id": "kangaroo", "repeat": 1}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Game Night",
+  "type": "playlist",
+  "total_duration_seconds": 70,
+  "sequence": [
+    {"category": "games", "id": "rock_paper_scissors", "repeat": 1},
+    {"category": "games", "id": "freeze_dance", "repeat": 1},
+    {"category": "games", "id": "simon_says", "repeat": 1},
+    {"category": "emotions", "id": "happy", "repeat": 1}
+  ]
+}

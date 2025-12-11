@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "category": "music",
+  "items": [
+    {"id": "happy_birthday", "name": "Happy Birthday", "icon": "🎂"},
+    {"id": "jingle_bells", "name": "Jingle Bells", "icon": "🔔"},
+    {"id": "starwars_theme", "name": "Star Wars Theme", "icon": "⭐"},
+    {"id": "pirates_caribbean", "name": "Pirates of the Caribbean", "icon": "🏴‍☠️"},
+    {"id": "baby_shark", "name": "Baby Shark", "icon": "🦈"},
+    {"id": "tetris_theme", "name": "Tetris Theme", "icon": "🎮"},
+    {"id": "mario_theme", "name": "Mario Theme", "icon": "🍄"},
+    {"id": "zelda_theme", "name": "Zelda Theme", "icon": "🗡️"},
+    {"id": "pokemon_theme", "name": "Pokemon Theme", "icon": "⚡"},
+    {"id": "avengers_theme", "name": "Avengers Theme", "icon": "🦸"},
+    {"id": "frozen_let_it_go", "name": "Frozen - Let It Go", "icon": "❄️"},
+    {"id": "eye_of_tiger", "name": "Eye of the Tiger", "icon": "🐯"},
+    {"id": "we_will_rock_you", "name": "We Will Rock You", "icon": "👊"},
+    {"id": "cantina_band", "name": "Cantina Band", "icon": "🎺"},
+    {"id": "imperial_march", "name": "Imperial March", "icon": "👤"}
+  ]
+}

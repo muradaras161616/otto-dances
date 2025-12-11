@@ -1,0 +1,11 @@
+{
+  "name": "Music Mix",
+  "type": "playlist",
+  "total_duration_seconds": 100,
+  "sequence": [
+    {"category": "music", "id": "happy_birthday", "repeat": 1},
+    {"category": "music", "id": "jingle_bells", "repeat": 1},
+    {"category": "music", "id": "mario_theme", "repeat": 1},
+    {"category": "dances", "id": "disco", "repeat": 1}
+  ]
+}

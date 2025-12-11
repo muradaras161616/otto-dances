@@ -1,0 +1,112 @@
+{
+  "name": "Surprised Face",
+  "emotion": "surprise",
+  "intensity": "high",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [
+        [0,0,1,1,1,1,0,0],
+        [0,1,1,1,1,1,1,0],
+        [0,1,1,1,1,1,1,0],
+        [0,0,1,1,1,1,0,0],
+        [0,0,0,0,0,0,0,0],
+        [0,0,1,1,1,1,0,0],
+        [0,1,0,0,0,0,1,0],
+        [0,0,1,1,1,1,0,0]
+      ]
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [255, 255, 255],
+      "elements": [
+        {
+          "type": "circle",
+          "x": 40,
+          "y": 50,
+          "radius": 12,
+          "color": [0, 0, 0],
+          "fill": false,
+          "label": "left_eye_outer"
+        },
+        {
+          "type": "circle",
+          "x": 40,
+          "y": 50,
+          "radius": 8,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "left_eye_pupil"
+        },
+        {
+          "type": "circle",
+          "x": 88,
+          "y": 50,
+          "radius": 12,
+          "color": [0, 0, 0],
+          "fill": false,
+          "label": "right_eye_outer"
+        },
+        {
+          "type": "circle",
+          "x": 88,
+          "y": 50,
+          "radius": 8,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "right_eye_pupil"
+        },
+        {
+          "type": "circle",
+          "x": 64,
+          "y": 100,
+          "radius": 15,
+          "color": [0, 0, 0],
+          "fill": false,
+          "label": "mouth"
+        }
+      ],
+      "animations": [
+        {
+          "element": "left_eye_outer",
+          "property": "radius",
+          "from": 12,
+          "to": 15,
+          "duration": 150,
+          "repeat": 2,
+          "yoyo": true
+        },
+        {
+          "element": "right_eye_outer",
+          "property": "radius",
+          "from": 12,
+          "to": 15,
+          "duration": 150,
+          "repeat": 2,
+          "yoyo": true
+        }
+      ]
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": [
+        "",
+        "   O     O   ",
+        "  O O   O O  ",
+        "             ",
+        "             ",
+        "     o o     "
+      ]
+    },
+    "lcd_16x2": {
+      "line1": "   O_O       ",
+      "line2": " SURPRISED!  "
+    },
+    "rgb_led": {
+      "color": [255, 255, 255],
+      "pattern": "blink",
+      "speed_ms": 100,
+      "brightness": 255
+    }
+  }
+}

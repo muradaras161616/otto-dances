@@ -1,0 +1,99 @@
+{
+  "name": "Excited Face",
+  "emotion": "excitement",
+  "intensity": "high",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [
+        [0,1,0,0,0,0,1,0],
+        [1,0,1,0,0,1,0,1],
+        [0,1,0,0,0,0,1,0],
+        [0,0,0,0,0,0,0,0],
+        [1,1,0,0,0,0,1,1],
+        [0,1,1,0,0,1,1,0],
+        [0,0,1,1,1,1,0,0],
+        [0,0,0,1,1,0,0,0]
+      ]
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [255, 255, 100],
+      "elements": [
+        {
+          "type": "polygon",
+          "points": [[35, 40], [40, 50], [45, 40], [50, 55], [40, 60], [30, 55]],
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "left_star"
+        },
+        {
+          "type": "polygon",
+          "points": [[83, 40], [88, 50], [93, 40], [98, 55], [88, 60], [78, 55]],
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "right_star"
+        },
+        {
+          "type": "circle",
+          "x": 64,
+          "y": 90,
+          "radius": 20,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "mouth"
+        },
+        {
+          "type": "text",
+          "x": 54,
+          "y": 120,
+          "text": "!",
+          "font_size": 24,
+          "color": [255, 0, 0],
+          "label": "exclamation"
+        }
+      ],
+      "animations": [
+        {
+          "element": "left_star",
+          "property": "rotation",
+          "from": 0,
+          "to": 360,
+          "duration": 500,
+          "repeat": 3,
+          "yoyo": false
+        },
+        {
+          "element": "right_star",
+          "property": "rotation",
+          "from": 0,
+          "to": 360,
+          "duration": 500,
+          "repeat": 3,
+          "yoyo": false
+        }
+      ]
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": [
+        "   *     *   ",
+        "             ",
+        "             ",
+        "    O O O    ",
+        "   O O O O   ",
+        "    O O O    "
+      ]
+    },
+    "lcd_16x2": {
+      "line1": "   *o*       ",
+      "line2": " EXCITED!!!  "
+    },
+    "rgb_led": {
+      "color": [255, 255, 0],
+      "pattern": "pulse",
+      "speed_ms": 200,
+      "brightness": 255
+    }
+  }
+}

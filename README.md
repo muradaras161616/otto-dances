@@ -3,11 +3,11 @@ Otto Robot Movement Database
 
 ## 📖 Proje Açıklaması
 
-Bu proje, Otto Robot için kapsamlı bir online hareket veritabanı içerir. ESP8266 tabanlı Otto robotlarınız için 10 farklı kategoride 150 hareket sunmaktadır.
+Bu proje, Otto Robot için kapsamlı bir online hareket veritabanı içerir. ESP8266 tabanlı Otto robotlarınız için 11 farklı kategoride 165 hareket sunmaktadır.
 
 ## 📚 Kategoriler
 
-Bu veritabanı aşağıdaki 10 kategoriyi içerir:
+Bu veritabanı aşağıdaki 11 kategoriyi içerir:
 
 | Kategori | İkon | Açıklama | Hareket Sayısı |
 |----------|------|----------|----------------|
@@ -21,6 +21,7 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 | Games | 🎮 | Oyun hareketleri | 15 |
 | Exercises | 💪 | Egzersiz rutinleri | 15 |
 | Sequences | 🔗 | Hareket zincirleri | 15 |
+| Faces | 😊 | Yüz ifadeleri (Çoklu ekran desteği) | 15 |
 
 ## 🎭 Danslar (Dances)
 
@@ -222,6 +223,166 @@ Bu veritabanı aşağıdaki 10 kategoriyi içerir:
 | party_mode | Party Mode | 🎊 |
 | random_fun | Random Fun | 🎲 |
 
+## 😊 Yüz İfadeleri (Faces)
+
+**Özel Özellik:** Bu kategori, çoklu ekran türlerini destekleyen ilk kategoridir!
+
+### Desteklenen Ekran Türleri
+
+1. **LED Matrix 8x8** - En yaygın Otto ekranı (bitmap formatı)
+2. **TFT 1.8" (ST7735 - 128x160)** - Renkli vektör grafik desteği
+3. **OLED 128x64 (SSD1306)** - Monokrom ASCII art
+4. **LCD 16x2** - Karakter tabanlı metin ekranı
+5. **RGB LED** - Tek renkli LED (renk desenleri ve efektleri)
+
+### Mevcut Yüz İfadeleri
+
+| ID | İsim | İkon | Duygu | Yoğunluk |
+|---|---|---|---|---|
+| happy | Happy | 😊 | joy | high |
+| sad | Sad | 😢 | sadness | high |
+| angry | Angry | 😠 | anger | high |
+| excited | Excited | 🤩 | excitement | high |
+| love | Love | 😍 | love | high |
+| sleepy | Sleepy | 😴 | sleepiness | medium |
+| surprised | Surprised | 😲 | surprise | high |
+| confused | Confused | 😕 | confusion | medium |
+| cool | Cool | 😎 | cool | medium |
+| wink | Wink | 😉 | playful | medium |
+| tongue | Tongue Out | 😛 | playful | high |
+| dead | Dead | 😵 | dead | high |
+| heart_eyes | Heart Eyes | 😍 | love | high |
+| smile | Smile | 🙂 | happiness | medium |
+| neutral | Neutral | 😐 | neutral | low |
+
+### Kod Örnekleri
+
+#### LED Matrix 8x8 Kullanımı
+```cpp
+#include <LedControl.h>
+
+LedControl lc = LedControl(12, 11, 10, 1); // DIN, CLK, CS, NUM_DEVICES
+
+void displayFace(byte face[8][8]) {
+  for(int row = 0; row < 8; row++) {
+    for(int col = 0; col < 8; col++) {
+      lc.setLed(0, row, col, face[row][col]);
+    }
+  }
+}
+
+// Happy face example
+byte happyFace[8][8] = {
+  {0,0,0,0,0,0,0,0},
+  {0,1,1,0,0,1,1,0},
+  {0,1,1,0,0,1,1,0},
+  {0,0,0,0,0,0,0,0},
+  {1,0,0,0,0,0,0,1},
+  {0,1,0,0,0,0,1,0},
+  {0,0,1,1,1,1,0,0},
+  {0,0,0,0,0,0,0,0}
+};
+
+displayFace(happyFace);
+```
+
+#### TFT Display Kullanımı
+```cpp
+#include <Adafruit_ST7735.h>
+
+Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
+
+void drawHappyFace() {
+  tft.fillScreen(ST77XX_YELLOW);
+  
+  // Left eye
+  tft.fillCircle(40, 50, 8, ST77XX_BLACK);
+  
+  // Right eye
+  tft.fillCircle(88, 50, 8, ST77XX_BLACK);
+  
+  // Smile (arc approximation with lines)
+  tft.drawCircle(64, 90, 30, ST77XX_BLACK);
+}
+```
+
+#### OLED Display Kullanımı
+```cpp
+#include <Adafruit_SSD1306.h>
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+void showHappyFace() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  
+  display.setCursor(0, 10);
+  display.println("   O     O   ");
+  display.println("             ");
+  display.println("      ^      ");
+  display.println("             ");
+  display.println("  \\______/  ");
+  
+  display.display();
+}
+```
+
+#### LCD 16x2 Kullanımı
+```cpp
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void showHappyFace() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("   ^_^       ");
+  lcd.setCursor(0, 1);
+  lcd.print("   HAPPY!    ");
+}
+```
+
+#### RGB LED Kullanımı
+```cpp
+void setRGBColor(int red, int green, int blue) {
+  analogWrite(RED_PIN, red);
+  analogWrite(GREEN_PIN, green);
+  analogWrite(BLUE_PIN, blue);
+}
+
+void happyFaceLED() {
+  // Yellow/orange color for happiness
+  setRGBColor(255, 200, 0);
+  
+  // Pulse effect
+  for(int brightness = 0; brightness < 200; brightness += 5) {
+    analogWrite(RED_PIN, map(brightness, 0, 200, 0, 255));
+    analogWrite(GREEN_PIN, map(brightness, 0, 200, 0, 200));
+    delay(10);
+  }
+}
+```
+
+### JSON Format Örneği
+
+Her yüz ifadesi dosyası tüm ekran türlerini destekler:
+
+```json
+{
+  "name": "Happy Face",
+  "emotion": "joy",
+  "intensity": "high",
+  "displays": {
+    "led_matrix_8x8": { /* 8x8 bitmap data */ },
+    "tft_128x160": { /* Vector graphics and animations */ },
+    "oled_128x64": { /* ASCII art */ },
+    "lcd_16x2": { /* 2 lines of text */ },
+    "rgb_led": { /* Color and pattern */ }
+  }
+}
+```
+
 
 ## 🚀 Kullanım Talimatları
 
@@ -251,6 +412,7 @@ GET /{category}/{movement_id}.json
 GET /dances/gangnam.json
 GET /music/happy_birthday.json
 GET /emotions/happy.json
+GET /faces/happy.json
 ```
 
 ## 📁 Dosya Formatları
@@ -368,6 +530,59 @@ GET /emotions/happy.json
     {"category": "dances", "id": "gangnam", "repeat": 2},
     {"category": "emotions", "id": "happy", "repeat": 1}
   ]
+}
+```
+
+### Yüz İfadeleri Formatı (Faces)
+
+```json
+{
+  "name": "Face Name",
+  "emotion": "joy/sadness/anger/etc",
+  "intensity": "low/medium/high",
+  "displays": {
+    "led_matrix_8x8": {
+      "type": "bitmap",
+      "data": [[0,1,...], [...], ...]  // 8x8 array
+    },
+    "tft_128x160": {
+      "type": "vector",
+      "background_color": [R, G, B],
+      "elements": [
+        {
+          "type": "circle/arc/rectangle/line/polygon/text",
+          "x": 64, "y": 50, "radius": 8,
+          "color": [0, 0, 0],
+          "fill": true,
+          "label": "element_name"
+        }
+      ],
+      "animations": [
+        {
+          "element": "element_name",
+          "property": "x/y/radius/rotation",
+          "from": 0, "to": 100,
+          "duration": 500,
+          "repeat": 2,
+          "yoyo": true
+        }
+      ]
+    },
+    "oled_128x64": {
+      "type": "ascii_art",
+      "lines": ["line1", "line2", ...]
+    },
+    "lcd_16x2": {
+      "line1": "16 characters max",
+      "line2": "16 characters max"
+    },
+    "rgb_led": {
+      "color": [R, G, B],  // 0-255 range
+      "pattern": "steady/pulse/blink/fade",
+      "speed_ms": 500,
+      "brightness": 200
+    }
+  }
 }
 ```
 

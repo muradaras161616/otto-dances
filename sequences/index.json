@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "sequences",
+  "description": "Combined movement sequences and performances",
+  "total_items": 15,
   "items": [
     {"id": "dance_party", "name": "Dance Party", "icon": "🎉"},
     {"id": "morning_routine", "name": "Morning Routine", "icon": "🌅"},

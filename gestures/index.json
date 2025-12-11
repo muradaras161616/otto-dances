@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "gestures",
+  "description": "Communication gestures and signals",
+  "total_items": 15,
   "items": [
     {"id": "hello", "name": "Hello", "icon": "👋"},
     {"id": "goodbye", "name": "Goodbye", "icon": "👋"},

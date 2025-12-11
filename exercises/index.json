@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "exercises",
+  "description": "Fitness and wellness routines",
+  "total_items": 15,
   "items": [
     {"id": "morning_stretch", "name": "Morning Stretch", "icon": "🌅"},
     {"id": "warmup", "name": "Warm Up", "icon": "🔥"},

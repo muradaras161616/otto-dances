@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "games",
+  "description": "Interactive games and activities",
+  "total_items": 15,
   "items": [
     {"id": "rock_paper_scissors", "name": "Rock Paper Scissors", "icon": "✊"},
     {"id": "dice_roll", "name": "Dice Roll", "icon": "🎲"},

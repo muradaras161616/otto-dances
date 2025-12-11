@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "sports",
+  "description": "Sports movements and celebrations",
+  "total_items": 15,
   "items": [
     {"id": "kick", "name": "Kick", "icon": "🦶"},
     {"id": "punch", "name": "Punch", "icon": "👊"},

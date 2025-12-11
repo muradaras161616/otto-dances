@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "actions",
+  "description": "Basic movement and action sequences",
+  "total_items": 15,
   "items": [
     {"id": "walk_forward", "name": "Walk Forward", "icon": "🚶"},
     {"id": "walk_backward", "name": "Walk Backward", "icon": "🚶"},

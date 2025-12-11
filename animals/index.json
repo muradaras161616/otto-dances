@@ -1,6 +1,8 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "category": "animals",
+  "description": "Animal movement imitations",
+  "total_items": 15,
   "items": [
     {"id": "dog", "name": "Dog", "icon": "🐕"},
     {"id": "cat", "name": "Cat", "icon": "🐈"},

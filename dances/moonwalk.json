@@ -1,10 +1,11 @@
 {
+  "type": "dance",
   "name": "Moonwalk",
-  "repeat": 4,
+  "description": "Michael Jackson'ın ünlü dansı",
   "steps": [
-    [65, 115, 115, 65, 150],
-    [90, 90, 65, 115, 150],
-    [115, 65, 90, 90, 150],
-    [90, 90, 115, 65, 150]
+    {"duration": 300, "yl": 70, "yr": 110, "rl": 90, "rr": 90},
+    {"duration": 300, "yl": 110, "yr": 70, "rl": 90, "rr": 90},
+    {"duration": 200, "yl": 90, "yr": 90, "rl": 60, "rr": 120},
+    {"duration": 200, "yl": 90, "yr": 90, "rl": 120, "rr": 60}
   ]
 }
